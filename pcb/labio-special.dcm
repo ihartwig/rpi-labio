@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP JACK_TRRS_6PINS
+D audio jack TRRS 6 pins (based on CUI SJ-4351x-SMT)
+K audio jack connector TRRS
+$ENDCMP
+#
+#End Doc Library
