@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -791,4 +791,8 @@ Wire Wire Line
 Connection ~ 6800 5600
 Text Notes 5700 5000 0    60   ~ 0
 Headset mic bias\nSuggested by WM8750BL datasheet (pg. 56).
+Text Notes 2600 5100 0    60   ~ 0
+0.25mA max
+Text Notes 3200 900  0    60   ~ 0
+20mA max\n(approx from 5W stereo output + mic input)
 $EndSCHEMATC

@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -124,18 +124,16 @@ Wire Wire Line
 Wire Wire Line
 	3900 1400 4000 1400
 Wire Wire Line
-	4000 1300 3900 1300
+	4000 1300 3300 1300
 Wire Wire Line
-	3900 1200 4000 1200
-Wire Wire Line
-	4000 1100 3900 1100
+	3300 1200 4000 1200
 Text Label 4900 2400 2    60   ~ 0
 ID_SC
-Text HLabel 3900 1100 0    60   Input ~ 0
+Text HLabel 3300 800  0    60   Input ~ 0
 3V3_1
-Text HLabel 3900 1200 0    60   Input ~ 0
+Text HLabel 3300 1200 0    60   Input ~ 0
 GPIO1_SDA1
-Text HLabel 3900 1300 0    60   Input ~ 0
+Text HLabel 3300 1300 0    60   Input ~ 0
 GPIO3_SCL1
 Text HLabel 3900 1400 0    60   Input ~ 0
 GPIO4
@@ -8082,11 +8080,7 @@ $EndComp
 Wire Wire Line
 	3600 2400 4000 2400
 Wire Wire Line
-	2900 1500 2900 2300
-Wire Wire Line
-	2900 2300 2900 3000
-Wire Wire Line
-	2900 3000 2900 3100
+	2900 1500 2900 3100
 Connection ~ 2900 3000
 Connection ~ 2900 2300
 Text HLabel 4600 1100 2    60   Input ~ 0
@@ -8131,15 +8125,7 @@ $EndComp
 Wire Wire Line
 	4500 2400 4900 2400
 Wire Wire Line
-	5600 1300 5600 1700
-Wire Wire Line
-	5600 1700 5600 2000
-Wire Wire Line
-	5600 2000 5600 2500
-Wire Wire Line
-	5600 2500 5600 2700
-Wire Wire Line
-	5600 2700 5600 3100
+	5600 1300 5600 3100
 Connection ~ 5600 2700
 Connection ~ 5600 2500
 Connection ~ 5600 2000
@@ -8202,25 +8188,15 @@ $EndComp
 Wire Wire Line
 	8200 2500 8200 2450
 Wire Wire Line
-	6800 2500 7400 2500
+	6800 2500 8200 2500
 Wire Wire Line
-	7400 2500 7700 2500
-Wire Wire Line
-	7700 2500 8200 2500
-Wire Wire Line
-	7200 2250 7500 2250
-Wire Wire Line
-	7500 2250 7800 2250
+	7200 2250 7800 2250
 Wire Wire Line
 	7500 2250 7500 1800
 Wire Wire Line
 	7700 2100 7800 2100
 Wire Wire Line
-	7700 1900 7700 2000
-Wire Wire Line
-	7700 2000 7700 2100
-Wire Wire Line
-	7700 2100 7700 2500
+	7700 1900 7700 2500
 Connection ~ 7700 2500
 Wire Wire Line
 	7800 2000 7700 2000
@@ -8229,13 +8205,9 @@ Wire Wire Line
 	7800 1900 7700 1900
 Connection ~ 7700 2000
 Wire Wire Line
-	8600 1950 8900 1950
+	8600 1950 9900 1950
 Wire Wire Line
-	8900 1950 9900 1950
-Wire Wire Line
-	8600 2100 9200 2100
-Wire Wire Line
-	9200 2100 9900 2100
+	8600 2100 9900 2100
 Wire Wire Line
 	8900 1800 8900 1950
 Connection ~ 8900 1950
@@ -8243,13 +8215,7 @@ Wire Wire Line
 	9200 1800 9200 2100
 Connection ~ 9200 2100
 Wire Wire Line
-	7300 1500 7500 1500
-Wire Wire Line
-	7500 1500 8200 1500
-Wire Wire Line
-	8200 1500 8900 1500
-Wire Wire Line
-	8900 1500 9200 1500
+	7300 1500 9200 1500
 Wire Wire Line
 	7500 1500 7500 1600
 Wire Wire Line
@@ -8297,4 +8263,123 @@ Text Label 9900 2100 2    60   ~ 0
 RPI_ID_SC
 Text HLabel 7300 1500 0    60   Input ~ 0
 3V3_2
+$Comp
+L R_Small R?
+U 1 1 5766CCA0
+P 3700 1000
+F 0 "R?" H 3730 1020 50  0000 L CNN
+F 1 "4.7k" H 3730 960 50  0000 L CNN
+F 2 "" H 3700 1000 50  0000 C CNN
+F 3 "" H 3700 1000 50  0000 C CNN
+	1    3700 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5766CD8E
+P 3400 1000
+F 0 "R?" H 3430 1020 50  0000 L CNN
+F 1 "4.7k" H 3430 960 50  0000 L CNN
+F 2 "" H 3400 1000 50  0000 C CNN
+F 3 "" H 3400 1000 50  0000 C CNN
+	1    3400 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1100 4000 800 
+Wire Wire Line
+	4000 800  3300 800 
+Wire Wire Line
+	3400 900  3400 800 
+Connection ~ 3400 800 
+Wire Wire Line
+	3400 1100 3400 1200
+Connection ~ 3400 1200
+Wire Wire Line
+	3700 900  3700 800 
+Connection ~ 3700 800 
+Wire Wire Line
+	3700 1100 3700 1300
+Connection ~ 3700 1300
+$Comp
+L AP7365_SOT-23-5 U?
+U 1 1 5767CCA9
+P 8200 4250
+F 0 "U?" H 7900 4600 60  0000 L CNN
+F 1 "AP7365_SOT-23-5" H 7900 3900 60  0000 L CNN
+F 2 "" H 8200 4250 60  0000 C CNN
+F 3 "" H 8200 4250 60  0000 C CNN
+	1    8200 4250
+	1    0    0    -1  
+$EndComp
+Text Notes 7800 1300 0    60   ~ 0
+RPi HAT EEPROM
+Text Notes 7800 3600 0    60   ~ 0
+Extra 3.3V Supply
+$Comp
+L C_Small C?
+U 1 1 5767CDD0
+P 7300 4300
+F 0 "C?" H 7310 4370 50  0000 L CNN
+F 1 "0.1uF" H 7310 4220 50  0000 L CNN
+F 2 "" H 7300 4300 50  0000 C CNN
+F 3 "" H 7300 4300 50  0000 C CNN
+	1    7300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5767CE24
+P 9100 4300
+F 0 "C?" H 9110 4370 50  0000 L CNN
+F 1 "0.1uF" H 9110 4220 50  0000 L CNN
+F 2 "" H 9100 4300 50  0000 C CNN
+F 3 "" H 9100 4300 50  0000 C CNN
+	1    9100 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5767CF14
+P 8900 4800
+F 0 "#PWR?" H 8900 4550 50  0001 C CNN
+F 1 "GND" H 8900 4650 50  0000 C CNN
+F 2 "" H 8900 4800 50  0000 C CNN
+F 3 "" H 8900 4800 50  0000 C CNN
+	1    8900 4800
+	1    0    0    -1  
+$EndComp
+Text HLabel 7100 4100 0    60   Input ~ 0
+VBUS
+Wire Wire Line
+	7100 4100 7700 4100
+Wire Wire Line
+	7300 4200 7300 4100
+Connection ~ 7300 4100
+Wire Wire Line
+	7700 4400 7600 4400
+Wire Wire Line
+	7600 4400 7600 4100
+Connection ~ 7600 4100
+Wire Wire Line
+	7300 4400 7300 4700
+Wire Wire Line
+	7300 4700 8900 4700
+Wire Wire Line
+	8900 4400 8900 4800
+Wire Wire Line
+	8900 4400 8700 4400
+Connection ~ 8900 4700
+Wire Wire Line
+	9100 4400 9100 4500
+Wire Wire Line
+	9100 4500 8900 4500
+Connection ~ 8900 4500
+Wire Wire Line
+	8700 4100 9200 4100
+Wire Wire Line
+	9100 4200 9100 4100
+Connection ~ 9100 4100
+Text HLabel 9200 4100 2    60   Input ~ 0
+3V3_EXTRA
 $EndSCHEMATC
