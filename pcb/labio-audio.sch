@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -78,7 +78,9 @@ F 3 "" H 7000 1500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 1200 7000 1500
+	7000 1200 7000 1400
+Wire Wire Line
+	7000 1400 7000 1500
 Wire Wire Line
 	7000 1400 6900 1400
 Wire Wire Line
@@ -233,7 +235,9 @@ Text Label 8100 6000 0    60   ~ 0
 TRRS_HPDETECT
 NoConn ~ 9000 5900
 Wire Wire Line
-	7000 3900 7000 4200
+	7000 3900 7000 4000
+Wire Wire Line
+	7000 4000 7000 4200
 Wire Wire Line
 	7000 3900 6900 3900
 $Comp
@@ -290,7 +294,11 @@ Wire Wire Line
 Wire Wire Line
 	8100 6100 9000 6100
 Wire Wire Line
-	6900 3200 9000 3200
+	6900 3200 8300 3200
+Wire Wire Line
+	8300 3200 8600 3200
+Wire Wire Line
+	8600 3200 9000 3200
 Text Label 9000 3200 2    60   ~ 0
 MICBIAS
 $Comp
@@ -366,14 +374,26 @@ Wire Wire Line
 	8300 3700 8300 3200
 Connection ~ 8300 3200
 Wire Wire Line
-	6900 3400 8000 3400
+	6900 3400 7700 3400
+Wire Wire Line
+	7700 3400 8000 3400
 Wire Wire Line
 	8000 3400 8000 3700
 Wire Wire Line
 	7700 3700 7700 3400
 Connection ~ 7700 3400
 Wire Wire Line
-	7000 4000 8600 4000
+	7000 4000 7100 4000
+Wire Wire Line
+	7100 4000 7400 4000
+Wire Wire Line
+	7400 4000 7700 4000
+Wire Wire Line
+	7700 4000 8000 4000
+Wire Wire Line
+	8000 4000 8300 4000
+Wire Wire Line
+	8300 4000 8600 4000
 Wire Wire Line
 	8600 4000 8600 3900
 Connection ~ 7000 4000
@@ -393,7 +413,9 @@ Wire Wire Line
 	7100 3900 7100 4000
 Connection ~ 7100 4000
 Wire Wire Line
-	6900 3600 7400 3600
+	6900 3600 7100 3600
+Wire Wire Line
+	7100 3600 7400 3600
 Wire Wire Line
 	7100 3600 7100 3700
 Wire Wire Line
@@ -444,7 +466,13 @@ F 3 "" H 3400 4200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 3400 3400 4200
+	3400 3400 3400 3500
+Wire Wire Line
+	3400 3500 3400 3600
+Wire Wire Line
+	3400 3600 3400 3700
+Wire Wire Line
+	3400 3700 3400 4200
 Wire Wire Line
 	3400 3400 3300 3400
 Wire Wire Line
@@ -472,12 +500,16 @@ Text Label 4400 3600 0    60   ~ 0
 LINPUT2
 Text Label 4400 3700 0    60   ~ 0
 RINPUT2
-Text HLabel 3800 3100 0    60   Input ~ 0
-VDD
 Wire Wire Line
-	3800 3100 3900 3100
+	3400 3100 3900 3100
 Wire Wire Line
-	3900 3100 3900 3700
+	3900 3100 3900 3400
+Wire Wire Line
+	3900 3400 3900 3500
+Wire Wire Line
+	3900 3500 3900 3600
+Wire Wire Line
+	3900 3600 3900 3700
 Wire Wire Line
 	3900 3700 3800 3700
 Wire Wire Line
@@ -489,8 +521,8 @@ Connection ~ 3900 3500
 Wire Wire Line
 	3800 3400 3900 3400
 Connection ~ 3900 3400
-Text HLabel 3200 1000 0    60   Input ~ 0
-VDD
+Text HLabel 3400 1900 0    60   Input ~ 0
+VDD3V3
 $Comp
 L SPU0410HR5H U?
 U 1 1 574D7E61
@@ -535,10 +567,12 @@ F 3 "" H 3000 5400 50  0000 C CNN
 	1    3000 5400
 	-1   0    0    1   
 $EndComp
-Text HLabel 2600 5200 0    60   Input ~ 0
-VDD
 Wire Wire Line
-	3000 5500 3000 6000
+	3000 5500 3000 5700
+Wire Wire Line
+	3000 5700 3000 5800
+Wire Wire Line
+	3000 5800 3000 6000
 Wire Wire Line
 	3000 5800 2600 5800
 Connection ~ 3000 5800
@@ -548,7 +582,9 @@ Connection ~ 3000 5700
 Wire Wire Line
 	3000 5200 3000 5300
 Wire Wire Line
-	2600 5200 3000 5200
+	2100 5200 2700 5200
+Wire Wire Line
+	2700 5200 3000 5200
 Wire Wire Line
 	2600 5500 2700 5500
 Wire Wire Line
@@ -570,30 +606,30 @@ Text Notes 8100 5000 0    60   ~ 0
 TRRS headset connector\nfor typical smartphone headset.
 Text Notes 7100 6750 0    60   ~ 0
 TRRS headset connector\nfor typical smartphone headset.
-Text HLabel 4800 3000 0    60   Input ~ 0
+Text HLabel 3400 2700 0    60   Input ~ 0
 SDA
-Text HLabel 4800 3100 0    60   Input ~ 0
+Text HLabel 3400 2800 0    60   Input ~ 0
 SCL
-Text HLabel 4800 1900 0    60   Input ~ 0
+Text HLabel 3400 2000 0    60   Input ~ 0
 MCLK
-Text HLabel 4800 2100 0    60   Input ~ 0
+Text HLabel 3400 2100 0    60   Input ~ 0
 BCLK
-Text HLabel 4800 2200 0    60   Input ~ 0
+Text HLabel 3400 2200 0    60   Input ~ 0
 LRCLK
-Text HLabel 4800 2400 0    60   Input ~ 0
+Text HLabel 3400 2500 0    60   Input ~ 0
 SDIN
-Text HLabel 4800 2500 0    60   Input ~ 0
+Text HLabel 3400 2600 0    60   Input ~ 0
 SDOUT
 Wire Wire Line
-	4800 3100 5300 3100
+	4700 3100 5300 3100
 Wire Wire Line
 	4800 3000 5300 3000
-Text Notes 4400 2350 2    60   ~ 0
-I2S Audio\nRPi drives MCLK, SDIN\nCodec drives BCLK, LRCLK, SDOUT
-Text Notes 4400 2900 2    60   ~ 0
+Text Notes 1200 2200 0    60   ~ 0
+I2S Audio\nRPi drives MCLK, SDIN.\nCodec drives BCLK, LRCLK, SDOUT.
+Text Notes 1200 2800 0    60   ~ 0
 I2C (2 wire) Ctrl\n7-bit addr: 0x34
 Wire Wire Line
-	4800 2400 5300 2400
+	4700 2400 5300 2400
 Wire Wire Line
 	4800 2500 5300 2500
 $Comp
@@ -612,7 +648,9 @@ Wire Wire Line
 Wire Wire Line
 	5000 2700 5200 2700
 Wire Wire Line
-	5200 2700 5200 2900
+	5200 2700 5200 2800
+Wire Wire Line
+	5200 2800 5200 2900
 Wire Wire Line
 	5200 2900 5300 2900
 Wire Wire Line
@@ -621,7 +659,7 @@ Connection ~ 5200 2800
 Wire Wire Line
 	4800 1900 5300 1900
 Wire Wire Line
-	5300 2100 4800 2100
+	4100 2100 5300 2100
 Wire Wire Line
 	6900 2900 7900 2900
 Wire Wire Line
@@ -643,7 +681,17 @@ TRRS_L
 NoConn ~ 6900 2400
 NoConn ~ 6900 2200
 Wire Wire Line
-	3200 1000 5300 1000
+	2100 1000 2700 1000
+Wire Wire Line
+	2700 1000 3300 1000
+Wire Wire Line
+	3300 1000 3400 1000
+Wire Wire Line
+	3400 1000 3700 1000
+Wire Wire Line
+	3700 1000 4000 1000
+Wire Wire Line
+	4000 1000 5300 1000
 Wire Wire Line
 	5300 1200 5250 1200
 Wire Wire Line
@@ -655,13 +703,21 @@ Wire Wire Line
 Wire Wire Line
 	5200 1100 5200 1400
 Wire Wire Line
-	3300 1100 5200 1100
+	3300 1100 4300 1100
+Wire Wire Line
+	4300 1100 4600 1100
+Wire Wire Line
+	4600 1100 4900 1100
+Wire Wire Line
+	4900 1100 5200 1100
 Wire Wire Line
 	5300 1600 5150 1600
 Wire Wire Line
 	5150 1600 5150 1150
 Wire Wire Line
-	4900 1100 4900 1200
+	4900 1100 4900 1150
+Wire Wire Line
+	4900 1150 4900 1200
 Connection ~ 4900 1150
 Wire Wire Line
 	4600 1200 4600 1100
@@ -673,9 +729,13 @@ Wire Wire Line
 	4300 1100 4300 1200
 Connection ~ 4300 1100
 Wire Wire Line
-	4300 1400 4300 1600
+	4300 1400 4300 1500
 Wire Wire Line
-	4300 1500 4900 1500
+	4300 1500 4300 1600
+Wire Wire Line
+	4300 1500 4600 1500
+Wire Wire Line
+	4600 1500 4900 1500
 Wire Wire Line
 	4600 1500 4600 1400
 Connection ~ 4300 1500
@@ -692,13 +752,19 @@ Wire Wire Line
 	3400 1200 3400 1000
 Connection ~ 3400 1000
 Wire Wire Line
-	4000 1000 4000 1200
+	4000 1000 4000 1050
+Wire Wire Line
+	4000 1050 4000 1200
 Connection ~ 4000 1000
 Connection ~ 4000 1050
 Wire Wire Line
-	3400 1400 3400 1600
+	3400 1400 3400 1500
 Wire Wire Line
-	3400 1500 4000 1500
+	3400 1500 3400 1600
+Wire Wire Line
+	3400 1500 3700 1500
+Wire Wire Line
+	3700 1500 4000 1500
 Wire Wire Line
 	3700 1500 3700 1400
 Connection ~ 3400 1500
@@ -706,7 +772,7 @@ Wire Wire Line
 	4000 1500 4000 1400
 Connection ~ 3700 1500
 Wire Wire Line
-	4800 2200 5300 2200
+	4100 2200 5300 2200
 NoConn ~ 5300 2300
 $Comp
 L C_Small C?
@@ -755,7 +821,13 @@ $EndComp
 Wire Wire Line
 	6600 5700 6600 5600
 Wire Wire Line
-	5700 5600 7200 5600
+	5700 5600 6600 5600
+Wire Wire Line
+	6600 5600 6800 5600
+Wire Wire Line
+	6800 5600 7000 5600
+Wire Wire Line
+	7000 5600 7200 5600
 Connection ~ 6600 5600
 Wire Wire Line
 	7000 5700 7000 5600
@@ -772,7 +844,9 @@ F 3 "" H 6600 6100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 5900 6600 6100
+	6600 5900 6600 6000
+Wire Wire Line
+	6600 6000 6600 6100
 Wire Wire Line
 	6600 6000 7000 6000
 Wire Wire Line
@@ -795,4 +869,126 @@ Text Notes 2600 5100 0    60   ~ 0
 0.25mA max
 Text Notes 3200 900  0    60   ~ 0
 20mA max\n(approx from 5W stereo output + mic input)
+Wire Wire Line
+	4800 3000 4800 2700
+Wire Wire Line
+	4800 2700 4100 2700
+Wire Wire Line
+	4100 2800 4700 2800
+Wire Wire Line
+	4700 2800 4700 3100
+Wire Wire Line
+	4800 2500 4800 2600
+Wire Wire Line
+	4800 2600 4100 2600
+Wire Wire Line
+	4100 2500 4700 2500
+Wire Wire Line
+	4700 2500 4700 2400
+Text Label 4200 2500 0    60   ~ 0
+SDIN_J
+Text Label 4200 2600 0    60   ~ 0
+SDOUT_J
+Text Label 4200 2700 0    60   ~ 0
+SDA_J
+Text Label 4200 2800 0    60   ~ 0
+SCL_J
+Wire Wire Line
+	3400 2500 3600 2500
+Wire Wire Line
+	3600 2600 3400 2600
+Wire Wire Line
+	3400 2700 3600 2700
+Wire Wire Line
+	3600 2800 3400 2800
+Wire Wire Line
+	3600 2200 3400 2200
+Wire Wire Line
+	3400 2100 3600 2100
+Wire Wire Line
+	4800 1900 4800 2000
+Wire Wire Line
+	4800 2000 4100 2000
+Wire Wire Line
+	4100 1900 4700 1900
+Text Label 4200 1900 0    60   ~ 0
+VDD3V3_J
+Wire Wire Line
+	3600 1900 3400 1900
+Wire Wire Line
+	3400 2000 3600 2000
+Text Label 4200 2000 0    60   ~ 0
+MCLK_J
+Text Label 4200 2100 0    60   ~ 0
+BCLK_J
+Text Label 4200 2200 0    60   ~ 0
+LRCLK_J
+Text Label 2100 1000 0    60   ~ 0
+VDD3V3_J
+Text Label 2100 5200 0    60   ~ 0
+VDD3V3_J
+Text Label 3400 3100 0    60   ~ 0
+VDD_3V3_J
+$Comp
+L DIP_SWITCH_X04 SW?
+U 1 1 576D26D0
+P 3850 2050
+F 0 "SW?" H 3850 2300 50  0000 C CNN
+F 1 "DIP_SWITCH_X04" H 3850 1800 50  0000 C CNN
+F 2 "" H 3850 850 50  0000 C CNN
+F 3 "" H 3850 850 50  0000 C CNN
+	1    3850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIP_SWITCH_X04 SW?
+U 1 1 576D2744
+P 3850 2650
+F 0 "SW?" H 3850 2900 50  0000 C CNN
+F 1 "DIP_SWITCH_X04" H 3850 2400 50  0000 C CNN
+F 2 "" H 3850 1450 50  0000 C CNN
+F 3 "" H 3850 1450 50  0000 C CNN
+	1    3850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 576D6BFB
+P 2700 1500
+F 0 "R?" H 2730 1520 50  0000 L CNN
+F 1 "2k" H 2730 1460 50  0000 L CNN
+F 2 "" H 2700 1500 50  0000 C CNN
+F 3 "" H 2700 1500 50  0000 C CNN
+	1    2700 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Led_Small D?
+U 1 1 576D6C80
+P 2700 1200
+F 0 "D?" H 2650 1325 50  0000 L CNN
+F 1 "Led_Small" H 2525 1100 50  0000 L CNN
+F 2 "" V 2700 1200 50  0000 C CNN
+F 3 "" V 2700 1200 50  0000 C CNN
+	1    2700 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 576D6E7D
+P 2700 1700
+F 0 "#PWR?" H 2700 1450 50  0001 C CNN
+F 1 "GND" H 2700 1550 50  0000 C CNN
+F 2 "" H 2700 1700 50  0000 C CNN
+F 3 "" H 2700 1700 50  0000 C CNN
+	1    2700 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1700 2700 1600
+Wire Wire Line
+	2700 1300 2700 1400
+Wire Wire Line
+	2700 1100 2700 1000
+Connection ~ 2700 1000
 $EndSCHEMATC

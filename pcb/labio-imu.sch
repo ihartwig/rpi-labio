@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -57,8 +57,6 @@ F 3 "" H 5800 2550 60  0000 C CNN
 	1    5800 2600
 	1    0    0    -1  
 $EndComp
-Text HLabel 3400 2300 0    60   Input ~ 0
-VDD3V3
 $Comp
 L GND #PWR?
 U 1 1 5762DC6A
@@ -73,7 +71,17 @@ $EndComp
 Wire Wire Line
 	3400 3000 3400 2900
 Wire Wire Line
-	3400 2900 5100 2900
+	3400 2900 3500 2900
+Wire Wire Line
+	3500 2900 3900 2900
+Wire Wire Line
+	3900 2900 4300 2900
+Wire Wire Line
+	4300 2900 4700 2900
+Wire Wire Line
+	4700 2900 5000 2900
+Wire Wire Line
+	5000 2900 5100 2900
 Wire Wire Line
 	5100 2800 5000 2800
 Wire Wire Line
@@ -140,7 +148,13 @@ Wire Wire Line
 	3500 2800 3500 2900
 Connection ~ 3500 2900
 Wire Wire Line
-	3400 2300 5100 2300
+	2800 2300 3500 2300
+Wire Wire Line
+	3500 2300 3900 2300
+Wire Wire Line
+	3900 2300 4300 2300
+Wire Wire Line
+	4300 2300 5100 2300
 Wire Wire Line
 	3500 2300 3500 2600
 Connection ~ 3500 2300
@@ -148,37 +162,34 @@ Wire Wire Line
 	3900 2600 3900 2300
 Connection ~ 3900 2300
 Wire Wire Line
-	4300 2300 4300 2600
+	4300 2300 4300 2400
+Wire Wire Line
+	4300 2400 4300 2600
 Connection ~ 4300 2300
 Wire Wire Line
 	4300 2400 5100 2400
 Connection ~ 4300 2400
 NoConn ~ 6500 2900
-Text HLabel 6900 2800 2    60   Input ~ 0
-INT_XL
+Text HLabel 7700 2700 2    60   Input ~ 0
+INT
 Wire Wire Line
-	6900 2800 6500 2800
-Text HLabel 6900 2700 2    60   Input ~ 0
-INT_MAG
+	7100 2700 6600 2700
 Wire Wire Line
-	6900 2700 6500 2700
-Text HLabel 6900 2500 2    60   Input ~ 0
+	6600 2700 6500 2700
+Text HLabel 7700 2500 2    60   Input ~ 0
 SCL
-Text HLabel 6900 2600 2    60   Input ~ 0
+Text HLabel 7700 2600 2    60   Input ~ 0
 SDA
-Text HLabel 6900 2300 2    60   Input ~ 0
+Text HLabel 7700 2400 2    60   Input ~ 0
 VDD3V3
 Wire Wire Line
-	6900 2600 6500 2600
+	7100 2600 6500 2600
 Wire Wire Line
-	6500 2500 6900 2500
-Wire Wire Line
-	6900 2300 6500 2300
+	6500 2500 7100 2500
 Wire Wire Line
 	6500 2400 6600 2400
 Wire Wire Line
-	6600 2400 6600 2300
-Connection ~ 6600 2300
+	6600 2400 7100 2400
 $Comp
 L BMP180 U?
 U 1 1 576424DA
@@ -190,8 +201,6 @@ F 3 "" H 5300 4500 60  0000 C CNN
 	1    5800 4700
 	1    0    0    -1  
 $EndComp
-Text HLabel 4400 4500 0    60   Input ~ 0
-VDD3V3
 $Comp
 L C_Small C?
 U 1 1 57642543
@@ -215,12 +224,18 @@ F 3 "" H 4500 4800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 4500 5300 4500
+	3800 4500 4500 4500
+Wire Wire Line
+	4500 4500 4900 4500
+Wire Wire Line
+	4900 4500 5300 4500
 Wire Wire Line
 	4500 4700 4500 4500
 Connection ~ 4500 4500
 Wire Wire Line
-	4900 4700 4900 4500
+	4900 4700 4900 4600
+Wire Wire Line
+	4900 4600 4900 4500
 Connection ~ 4900 4500
 Wire Wire Line
 	4900 4600 5300 4600
@@ -230,7 +245,11 @@ Wire Wire Line
 Wire Wire Line
 	5200 4800 5200 5000
 Wire Wire Line
-	5200 5000 4400 5000
+	5200 5000 4900 5000
+Wire Wire Line
+	4900 5000 4500 5000
+Wire Wire Line
+	4500 5000 4400 5000
 Wire Wire Line
 	4400 5000 4400 5100
 Wire Wire Line
@@ -250,10 +269,6 @@ F 3 "" H 4400 5100 50  0000 C CNN
 	1    4400 5100
 	1    0    0    -1  
 $EndComp
-Text HLabel 6900 4600 2    60   Input ~ 0
-SCL
-Text HLabel 6900 4700 2    60   Input ~ 0
-SDA
 Wire Wire Line
 	6900 4600 6300 4600
 Wire Wire Line
@@ -264,4 +279,49 @@ Text Notes 3400 2200 0    60   ~ 0
 0.5mA max
 Text Notes 4400 4400 0    60   ~ 0
 1mA max
+Wire Wire Line
+	6500 2800 6600 2800
+Wire Wire Line
+	6600 2800 6600 2700
+Connection ~ 6600 2700
+$Comp
+L DIP_SWITCH_X04 SW?
+U 1 1 576D37BB
+P 7350 2550
+F 0 "SW?" H 7350 2800 50  0000 C CNN
+F 1 "DIP_SWITCH_X04" H 7350 2300 50  0000 C CNN
+F 2 "" H 7350 1350 50  0000 C CNN
+F 3 "" H 7350 1350 50  0000 C CNN
+	1    7350 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2400 6600 2300
+Wire Wire Line
+	6600 2300 6500 2300
+Connection ~ 6600 2400
+Wire Wire Line
+	7700 2400 7600 2400
+Wire Wire Line
+	7600 2500 7700 2500
+Wire Wire Line
+	7700 2600 7600 2600
+Wire Wire Line
+	7600 2700 7700 2700
+Text Label 6700 2700 0    60   ~ 0
+INT_J
+Text Label 6700 2600 0    60   ~ 0
+SDA_J
+Text Label 6700 2500 0    60   ~ 0
+SCL_J
+Text Label 6700 2400 0    60   ~ 0
+VDD3V3_J
+Text Label 2800 2300 0    60   ~ 0
+VDD3V3_J
+Text Label 3800 4500 0    60   ~ 0
+VDD3V3_J
+Text Label 6600 4700 0    60   ~ 0
+SDA_J
+Text Label 6600 4600 0    60   ~ 0
+SCL_J
 $EndSCHEMATC
