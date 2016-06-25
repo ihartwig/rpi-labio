@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 5 8
 Title ""
 Date ""
 Rev ""
@@ -60,28 +60,18 @@ $EndComp
 $Comp
 L GND #PWR?
 U 1 1 5762DC6A
-P 3400 3000
-F 0 "#PWR?" H 3400 2750 50  0001 C CNN
-F 1 "GND" H 3400 2850 50  0000 C CNN
-F 2 "" H 3400 3000 50  0000 C CNN
-F 3 "" H 3400 3000 50  0000 C CNN
-	1    3400 3000
+P 3400 3200
+F 0 "#PWR?" H 3400 2950 50  0001 C CNN
+F 1 "GND" H 3400 3050 50  0000 C CNN
+F 2 "" H 3400 3200 50  0000 C CNN
+F 3 "" H 3400 3200 50  0000 C CNN
+	1    3400 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 3000 3400 2900
+	3400 3200 3400 2900
 Wire Wire Line
-	3400 2900 3500 2900
-Wire Wire Line
-	3500 2900 3900 2900
-Wire Wire Line
-	3900 2900 4300 2900
-Wire Wire Line
-	4300 2900 4700 2900
-Wire Wire Line
-	4700 2900 5000 2900
-Wire Wire Line
-	5000 2900 5100 2900
+	3400 2900 5100 2900
 Wire Wire Line
 	5100 2800 5000 2800
 Wire Wire Line
@@ -148,13 +138,7 @@ Wire Wire Line
 	3500 2800 3500 2900
 Connection ~ 3500 2900
 Wire Wire Line
-	2800 2300 3500 2300
-Wire Wire Line
-	3500 2300 3900 2300
-Wire Wire Line
-	3900 2300 4300 2300
-Wire Wire Line
-	4300 2300 5100 2300
+	2800 2300 5100 2300
 Wire Wire Line
 	3500 2300 3500 2600
 Connection ~ 3500 2300
@@ -162,9 +146,7 @@ Wire Wire Line
 	3900 2600 3900 2300
 Connection ~ 3900 2300
 Wire Wire Line
-	4300 2300 4300 2400
-Wire Wire Line
-	4300 2400 4300 2600
+	4300 2300 4300 2600
 Connection ~ 4300 2300
 Wire Wire Line
 	4300 2400 5100 2400
@@ -173,9 +155,7 @@ NoConn ~ 6500 2900
 Text HLabel 7700 2700 2    60   Input ~ 0
 INT
 Wire Wire Line
-	7100 2700 6600 2700
-Wire Wire Line
-	6600 2700 6500 2700
+	6500 2700 7100 2700
 Text HLabel 7700 2500 2    60   Input ~ 0
 SCL
 Text HLabel 7700 2600 2    60   Input ~ 0
@@ -187,9 +167,7 @@ Wire Wire Line
 Wire Wire Line
 	6500 2500 7100 2500
 Wire Wire Line
-	6500 2400 6600 2400
-Wire Wire Line
-	6600 2400 7100 2400
+	6500 2400 7100 2400
 $Comp
 L BMP180 U?
 U 1 1 576424DA
@@ -224,18 +202,12 @@ F 3 "" H 4500 4800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 4500 4500 4500
-Wire Wire Line
-	4500 4500 4900 4500
-Wire Wire Line
-	4900 4500 5300 4500
+	3800 4500 5300 4500
 Wire Wire Line
 	4500 4700 4500 4500
 Connection ~ 4500 4500
 Wire Wire Line
-	4900 4700 4900 4600
-Wire Wire Line
-	4900 4600 4900 4500
+	4900 4500 4900 4700
 Connection ~ 4900 4500
 Wire Wire Line
 	4900 4600 5300 4600
@@ -245,11 +217,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 4800 5200 5000
 Wire Wire Line
-	5200 5000 4900 5000
-Wire Wire Line
-	4900 5000 4500 5000
-Wire Wire Line
-	4500 5000 4400 5000
+	5200 5000 4400 5000
 Wire Wire Line
 	4400 5000 4400 5100
 Wire Wire Line
@@ -324,4 +292,36 @@ Text Label 6600 4700 0    60   ~ 0
 SDA_J
 Text Label 6600 4600 0    60   ~ 0
 SCL_J
+$Comp
+L Led_Small D?
+U 1 1 5770C700
+P 3100 2600
+F 0 "D?" H 3050 2725 50  0000 L CNN
+F 1 "Led_Small" H 2925 2500 50  0000 L CNN
+F 2 "" V 3100 2600 50  0000 C CNN
+F 3 "" V 3100 2600 50  0000 C CNN
+	1    3100 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5770C793
+P 3100 2900
+F 0 "R?" H 3130 2920 50  0000 L CNN
+F 1 "2k" H 3130 2860 50  0000 L CNN
+F 2 "" H 3100 2900 50  0000 C CNN
+F 3 "" H 3100 2900 50  0000 C CNN
+	1    3100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2500 3100 2300
+Connection ~ 3100 2300
+Wire Wire Line
+	3100 2700 3100 2800
+Wire Wire Line
+	3100 3000 3100 3100
+Wire Wire Line
+	3100 3100 3400 3100
+Connection ~ 3400 3100
 $EndSCHEMATC

@@ -14,4 +14,9 @@ D Transistor NPN (general)
 K npn transistor
 $ENDCMP
 #
+$CMP ROT_ENC
+D Mechanical rotary encoder. Bourns PEC12R or similar.
+K Encoder
+$ENDCMP
+#
 #End Doc Library
