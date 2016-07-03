@@ -11,3 +11,7 @@
 
 # Autorouter files (exported from Pcbnew)
 .dsn
+
+# OS X
+.DS_Store
+

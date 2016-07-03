@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -96,9 +96,9 @@ U 57483FA2
 F0 "labio-display" 60
 F1 "labio-display.sch" 60
 F2 "VDD_3V3" I L 3700 3500 60 
-F3 "~OLED_CS" I L 3700 4000 60 
-F4 "OLED_SCK" I L 3700 3900 60 
-F5 "OLED_MOSI" I L 3700 3800 60 
+F3 "~CS" I L 3700 4000 60 
+F4 "SCK" I L 3700 3900 60 
+F5 "MOSI" I L 3700 3800 60 
 $EndSheet
 $Sheet
 S 8300 1000 1400 1300
@@ -129,6 +129,7 @@ F12 "ENC1_IDX" I L 8300 5500 60
 F13 "ENC0_A" I L 8300 5000 60 
 F14 "ENC0_B" I L 8300 5100 60 
 F15 "ENC0_IDX" I L 8300 5200 60 
+F16 "VS_MOTOR" I R 9700 3500 60 
 $EndSheet
 Wire Wire Line
 	2500 5500 8300 5500
@@ -396,4 +397,23 @@ Wire Wire Line
 	3300 3800 3700 3800
 Text Notes 2400 4100 2    60   Italic 0
 SPI
+$Sheet
+S 10200 3100 950  500 
+U 57782573
+F0 "labio-power" 60
+F1 "labio-power.sch" 60
+F2 "VDD_5V" I L 10200 3200 60 
+F3 "VS_MOTOR" I L 10200 3500 60 
+$EndSheet
+Wire Wire Line
+	10200 3200 10000 3200
+Wire Wire Line
+	10000 3200 10000 2900
+Wire Wire Line
+	10000 2900 8200 2900
+Wire Wire Line
+	8200 2900 8200 3200
+Connection ~ 8200 3200
+Wire Wire Line
+	9700 3500 10200 3500
 $EndSCHEMATC
