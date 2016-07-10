@@ -110,17 +110,6 @@ F 3 "" H 3900 2700 50  0000 C CNN
 	1    3900 2700
 	1    0    0    -1  
 $EndComp
-$Comp
-L CP_Small C501
-U 1 1 5762DD77
-P 3500 2700
-F 0 "C501" H 3510 2770 50  0000 L CNN
-F 1 "10uF" H 3510 2620 50  0000 L CNN
-F 2 "Capacitors_Tantalum_SMD:TantalC_SizeA_EIA-3216_Wave" H 3500 2700 50  0001 C CNN
-F 3 "" H 3500 2700 50  0000 C CNN
-	1    3500 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5100 2500 4700 2500
 Wire Wire Line
@@ -324,4 +313,15 @@ Wire Wire Line
 Wire Wire Line
 	3100 3100 3400 3100
 Connection ~ 3400 3100
+$Comp
+L C_Small C501
+U 1 1 577DEFF4
+P 3500 2700
+F 0 "C501" H 3510 2770 50  0000 L CNN
+F 1 "4.7uF" H 3510 2620 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3500 2700 50  0001 C CNN
+F 3 "" H 3500 2700 50  0000 C CNN
+	1    3500 2700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

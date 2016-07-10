@@ -8258,9 +8258,9 @@ Wire Wire Line
 	7400 2600 7400 2500
 Connection ~ 7400 2500
 Text Label 9900 1950 2    60   ~ 0
-RPI_ID_SD
+ID_SD
 Text Label 9900 2100 2    60   ~ 0
-RPI_ID_SC
+ID_SC
 Text HLabel 7300 1500 0    60   Input ~ 0
 3V3_2
 $Comp

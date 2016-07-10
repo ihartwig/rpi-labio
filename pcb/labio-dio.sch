@@ -88,9 +88,9 @@ F 3 "" H 10500 2700 50  0000 C CNN
 	1    10500 2700
 	1    0    0    1   
 $EndComp
-Text Notes 8600 1500 0    60   ~ 0
+Text Notes 8600 1200 0    60   ~ 0
 Quadrature Encoder Pins\n\nUS Digital S1 Pinout.\nJumper for power source.\nDiodes for 5V levels and multiplexing.\nUse RPi pull-ups.
-Text Notes 6200 1500 0    60   ~ 0
+Text Notes 6200 1000 0    60   ~ 0
 Servo Pins\n\nGround, voltage, signal headers.\nJumper for power source.
 Text Notes 700  1200 0    60   ~ 0
 Motor Driver\n\n2x DC Motors or 1x Bipolor Stepper Motor
@@ -260,8 +260,8 @@ L CP_Small C603
 U 1 1 5762E5E5
 P 4700 1700
 F 0 "C603" H 4710 1770 50  0000 L CNN
-F 1 "10uF" H 4710 1620 50  0000 L CNN
-F 2 "Capacitors_Tantalum_SMD:TantalC_SizeA_EIA-3216_Wave" H 4700 1700 50  0001 C CNN
+F 1 "47uF" H 4710 1620 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x5.8" H 4700 1700 50  0001 C CNN
 F 3 "" H 4700 1700 50  0000 C CNN
 	1    4700 1700
 	1    0    0    -1  
@@ -271,8 +271,8 @@ L CP_Small C604
 U 1 1 5762E703
 P 5100 1700
 F 0 "C604" H 5110 1770 50  0000 L CNN
-F 1 "10uF" H 5110 1620 50  0000 L CNN
-F 2 "Capacitors_Tantalum_SMD:TantalC_SizeA_EIA-3216_Wave" H 5100 1700 50  0001 C CNN
+F 1 "47uF" H 5110 1620 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x5.8" H 5100 1700 50  0001 C CNN
 F 3 "" H 5100 1700 50  0000 C CNN
 	1    5100 1700
 	1    0    0    -1  
@@ -2201,4 +2201,59 @@ NoConn ~ 1550 7000
 Text HLabel 3900 1500 0    60   Input ~ 0
 VS_MOTOR
 Connection ~ 4000 1500
+$Comp
+L CP_Small C608
+U 1 1 577DDEB8
+P 6500 1400
+F 0 "C608" H 6510 1470 50  0000 L CNN
+F 1 "47uF" H 6510 1320 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x5.8" H 6500 1400 50  0001 C CNN
+F 3 "" H 6500 1400 50  0000 C CNN
+	1    6500 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C609
+U 1 1 577DE0C4
+P 6900 1400
+F 0 "C609" H 6910 1470 50  0000 L CNN
+F 1 "47uF" H 6910 1320 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x5.8" H 6900 1400 50  0001 C CNN
+F 3 "" H 6900 1400 50  0000 C CNN
+	1    6900 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1200 6900 1200
+Wire Wire Line
+	6500 1200 6500 1300
+Wire Wire Line
+	6900 1200 6900 1300
+Connection ~ 6500 1200
+$Comp
+L GND #PWR033
+U 1 1 577DE6E6
+P 7500 1400
+F 0 "#PWR033" H 7500 1150 50  0001 C CNN
+F 1 "GND" H 7500 1250 50  0000 C CNN
+F 2 "" H 7500 1400 50  0000 C CNN
+F 3 "" H 7500 1400 50  0000 C CNN
+	1    7500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1400 7500 1300
+Wire Wire Line
+	7500 1300 7300 1300
+Wire Wire Line
+	7300 1300 7300 1600
+Wire Wire Line
+	7300 1600 6500 1600
+Wire Wire Line
+	6900 1600 6900 1500
+Wire Wire Line
+	6500 1600 6500 1500
+Connection ~ 6900 1600
+Text Label 6100 1200 0    60   ~ 0
+VDD_SERVO
 $EndSCHEMATC
