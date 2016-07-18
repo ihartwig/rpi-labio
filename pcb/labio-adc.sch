@@ -111,7 +111,7 @@ F 3 "" H 7600 3400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 9400 3300 2    60   Input ~ 0
-VDD
+VDD5V
 Text HLabel 9400 3500 2    60   Input ~ 0
 SDA
 Text HLabel 9400 3600 2    60   Input ~ 0
@@ -120,10 +120,6 @@ Text HLabel 9400 3400 2    60   Input ~ 0
 ALERT
 Wire Wire Line
 	6800 3400 7300 3400
-Wire Wire Line
-	7300 3500 6800 3500
-Wire Wire Line
-	6800 3600 7300 3600
 Wire Wire Line
 	5200 3200 5800 3200
 Wire Wire Line
@@ -163,7 +159,7 @@ Connection ~ 4700 3200
 Wire Wire Line
 	6800 3300 6900 3300
 Text Notes 5400 2700 0    60   ~ 0
-12-bit (ADS1015) or 16-bit (ADS1115) ADC\nwith differential PGA and 4-channel mux.\n\n7-bit addr: 0x73
+12-bit (ADS1015) or 16-bit (ADS1115) ADC\nwith differential PGA and 4-channel mux.\n\n7-bit addr: 0x73\n\n5V VDD to safely sample RPi VBUS.
 Text Label 5300 3200 0    60   ~ 0
 ACD_AIN0
 Text Label 5300 3300 0    60   ~ 0
@@ -293,7 +289,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 3500 8800 3500
 Wire Wire Line
-	8800 3600 8400 3600
+	8800 3600 8500 3600
 Wire Wire Line
 	8800 3300 8700 3300
 Wire Wire Line
@@ -320,20 +316,109 @@ Wire Wire Line
 	9400 3500 9300 3500
 Wire Wire Line
 	9300 3600 9400 3600
-Text Label 8400 3200 0    60   ~ 0
-VDD_J
+Text Label 8700 3200 2    60   ~ 0
+VDD5V_J
 Text Label 8400 3400 0    60   ~ 0
 INT_J
 Text Label 8400 3500 0    60   ~ 0
 SDA_J
-Text Label 8400 3600 0    60   ~ 0
+Text Label 8500 3600 0    60   ~ 0
 SCL_J
 Text Label 7300 3400 2    60   ~ 0
 INT_J
-Text Label 7300 3500 2    60   ~ 0
-SDA_J
-Text Label 7300 3600 2    60   ~ 0
-SCL_J
 Text Label 5100 4600 0    60   ~ 0
 VDD_J
+$Comp
+L Q_NMOS_GSD Q303
+U 1 1 578AEC2F
+P 7800 4800
+F 0 "Q303" H 8100 4850 50  0000 R CNN
+F 1 "Q_NMOS_GSD" H 8450 4750 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 8000 4900 50  0001 C CNN
+F 3 "" H 7800 4800 50  0000 C CNN
+	1    7800 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Q_NMOS_GSD Q302
+U 1 1 578AECE5
+P 7600 5500
+F 0 "Q302" H 7900 5550 50  0000 R CNN
+F 1 "Q_NMOS_GSD" H 8250 5450 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7800 5600 50  0001 C CNN
+F 3 "" H 7600 5500 50  0000 C CNN
+	1    7600 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R304
+U 1 1 578AED3B
+P 7500 4500
+F 0 "R304" H 7530 4520 50  0000 L CNN
+F 1 "10k" H 7530 4460 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 7500 4500 50  0001 C CNN
+F 3 "" H 7500 4500 50  0000 C CNN
+	1    7500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R303
+U 1 1 578AED89
+P 7200 4500
+F 0 "R303" H 7230 4520 50  0000 L CNN
+F 1 "10k" H 7230 4460 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 7200 4500 50  0001 C CNN
+F 3 "" H 7200 4500 50  0000 C CNN
+	1    7200 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 5000 7800 5100
+Wire Wire Line
+	7800 5100 7900 5100
+Wire Wire Line
+	7600 5700 7600 5800
+Wire Wire Line
+	7600 5800 7700 5800
+Text HLabel 7900 5100 2    60   Input ~ 0
+VDD3V3
+Text HLabel 7700 5800 2    60   Input ~ 0
+VDD3V3
+Wire Wire Line
+	6800 3600 6900 3600
+Wire Wire Line
+	6900 3600 6900 5400
+Wire Wire Line
+	6900 5400 7400 5400
+Wire Wire Line
+	6800 3500 7000 3500
+Wire Wire Line
+	7000 3500 7000 4700
+Wire Wire Line
+	7000 4700 7600 4700
+Wire Wire Line
+	7200 4600 7200 5400
+Connection ~ 7200 5400
+Wire Wire Line
+	7500 4600 7500 4700
+Connection ~ 7500 4700
+Wire Wire Line
+	7200 4400 7200 4300
+Wire Wire Line
+	7200 4300 7700 4300
+Wire Wire Line
+	7500 4400 7500 4300
+Connection ~ 7500 4300
+Text Label 7700 4300 2    60   ~ 0
+VDD5V_J
+Wire Wire Line
+	8400 3500 8400 4700
+Wire Wire Line
+	8400 4700 8000 4700
+Wire Wire Line
+	7800 5400 8500 5400
+Wire Wire Line
+	8500 5400 8500 3600
+Text Notes 7100 6000 0    60   ~ 0
+5V <=> 3.3V level shifting
 $EndSCHEMATC
