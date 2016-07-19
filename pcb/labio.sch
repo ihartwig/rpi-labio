@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 10
 Title ""
 Date ""
 Rev ""
@@ -85,10 +85,11 @@ S 3700 1000 1400 1300
 U 57483B82
 F0 "labio-adc" 60
 F1 "labio-adc.sch" 60
-F2 "VDD" I L 3700 1100 60 
-F3 "SDA" I L 3700 1400 60 
-F4 "SCL" I L 3700 1500 60 
-F5 "ALERT" I L 3700 1600 60 
+F2 "SDA" I L 3700 1400 60 
+F3 "SCL" I L 3700 1500 60 
+F4 "ALERT" I L 3700 1600 60 
+F5 "VDD5V" I L 3700 1100 60 
+F6 "VDD3V3" I L 3700 1200 60 
 $EndSheet
 $Sheet
 S 3700 3400 1400 1300
@@ -144,11 +145,9 @@ Wire Wire Line
 Wire Wire Line
 	2500 5000 8300 5000
 Wire Wire Line
-	2500 1400 3200 1400
+	2500 1400 3100 1400
 Wire Wire Line
 	7800 1100 8300 1100
-Wire Wire Line
-	3700 1100 3200 1100
 Wire Wire Line
 	2500 2200 3000 2200
 Wire Wire Line
@@ -242,7 +241,7 @@ Text Label 7800 1100 0    60   ~ 0
 Text Label 7700 3300 0    60   ~ 0
 3V3_EXTRA
 Wire Wire Line
-	8300 3200 7700 3200
+	7700 3200 8300 3200
 Text Label 7700 3200 0    60   ~ 0
 5V
 Text Label 5500 1800 0    60   ~ 0
@@ -253,12 +252,10 @@ Text Label 3100 3700 2    60   ~ 0
 GPCLK1
 Text Label 3200 3500 0    60   ~ 0
 3V3_EXTRA
-Wire Wire Line
-	3200 1100 3200 1400
-Text Label 3200 1100 0    60   ~ 0
+Text Label 3000 1400 2    60   ~ 0
 3V3_EXTRA
 Wire Wire Line
-	2500 1100 3000 1100
+	2500 1100 3700 1100
 Text Label 3000 1100 2    60   ~ 0
 5V
 Wire Wire Line
@@ -416,4 +413,14 @@ Wire Wire Line
 Connection ~ 8200 3200
 Wire Wire Line
 	9700 3500 10200 3500
+Wire Wire Line
+	3100 1400 3100 1200
+Wire Wire Line
+	3100 1200 3700 1200
+$Sheet
+S 10200 5100 950  500 
+U 578DDEC2
+F0 "labio-mech" 60
+F1 "labio-mech.sch" 60
+$EndSheet
 $EndSCHEMATC

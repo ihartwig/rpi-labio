@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 9
+Sheet 3 10
 Title ""
 Date ""
 Rev ""
@@ -327,7 +327,7 @@ SCL_J
 Text Label 7300 3400 2    60   ~ 0
 INT_J
 Text Label 5100 4600 0    60   ~ 0
-VDD_J
+VDD5V_J
 $Comp
 L Q_NMOS_GSD Q303
 U 1 1 578AEC2F
@@ -421,4 +421,8 @@ Wire Wire Line
 	8500 5400 8500 3600
 Text Notes 7100 6000 0    60   ~ 0
 5V <=> 3.3V level shifting
+Text Label 7000 4700 0    60   ~ 0
+SDA_5V
+Text Label 7000 5400 0    60   ~ 0
+SCL_5V
 $EndSCHEMATC

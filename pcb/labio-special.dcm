@@ -35,4 +35,8 @@ D Mechanical rotary encoder. Bourns PEC12R or similar.
 K Encoder
 $ENDCMP
 #
+$CMP hole
+D Hole with optional net connection
+$ENDCMP
+#
 #End Doc Library
