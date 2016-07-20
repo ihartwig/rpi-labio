@@ -120,4 +120,28 @@ F 3 "" H 2000 3100 60  0000 C CNN
 $EndComp
 NoConn ~ 2200 3100
 NoConn ~ 1600 3100
+$Comp
+L hole H1007
+U 1 1 578EDB90
+P 3800 1900
+F 0 "H1007" H 3800 2150 60  0000 C CNN
+F 1 "hole" H 3800 1650 60  0000 C CNN
+F 2 "labio-special:hole-m3" H 3800 1900 60  0001 C CNN
+F 3 "" H 3800 1900 60  0000 C CNN
+	1    3800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L hole H1008
+U 1 1 578EDB96
+P 4400 1900
+F 0 "H1008" H 4400 2150 60  0000 C CNN
+F 1 "hole" H 4400 1650 60  0000 C CNN
+F 2 "labio-special:hole-m3" H 4400 1900 60  0001 C CNN
+F 3 "" H 4400 1900 60  0000 C CNN
+	1    4400 1900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4000 1900
+NoConn ~ 4600 1900
 $EndSCHEMATC
