@@ -124,16 +124,16 @@ Wire Wire Line
 Wire Wire Line
 	3900 1400 4000 1400
 Wire Wire Line
-	4000 1300 3300 1300
+	2900 1300 4000 1300
 Wire Wire Line
-	3300 1200 4000 1200
+	2900 1200 4000 1200
 Text Label 4900 2400 2    60   ~ 0
 ID_SC
-Text HLabel 3300 800  0    60   Input ~ 0
+Text HLabel 3900 1100 0    60   Input ~ 0
 3V3_1
-Text HLabel 3300 1200 0    60   Input ~ 0
+Text HLabel 2900 1200 0    60   Input ~ 0
 GPIO1_SDA1
-Text HLabel 3300 1300 0    60   Input ~ 0
+Text HLabel 2900 1300 0    60   Input ~ 0
 GPIO3_SCL1
 Text HLabel 3900 1400 0    60   Input ~ 0
 GPIO4
@@ -8266,41 +8266,31 @@ Text HLabel 7300 1500 0    60   Input ~ 0
 $Comp
 L R_Small R202
 U 1 1 5766CCA0
-P 3700 1000
-F 0 "R202" H 3730 1020 50  0000 L CNN
-F 1 "4.7k" H 3730 960 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 3700 1000 50  0001 C CNN
-F 3 "" H 3700 1000 50  0000 C CNN
-	1    3700 1000
+P 3300 1000
+F 0 "R202" H 3330 1020 50  0000 L CNN
+F 1 "4.7k" H 3330 960 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 3300 1000 50  0001 C CNN
+F 3 "" H 3300 1000 50  0000 C CNN
+	1    3300 1000
 	1    0    0    -1  
 $EndComp
 $Comp
 L R_Small R201
 U 1 1 5766CD8E
-P 3400 1000
-F 0 "R201" H 3430 1020 50  0000 L CNN
-F 1 "4.7k" H 3430 960 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 3400 1000 50  0001 C CNN
-F 3 "" H 3400 1000 50  0000 C CNN
-	1    3400 1000
+P 3000 1000
+F 0 "R201" H 3030 1020 50  0000 L CNN
+F 1 "4.7k" H 3030 960 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 3000 1000 50  0001 C CNN
+F 3 "" H 3000 1000 50  0000 C CNN
+	1    3000 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 1100 4000 800 
+	3000 1100 3000 1200
+Connection ~ 3000 1200
 Wire Wire Line
-	4000 800  3300 800 
-Wire Wire Line
-	3400 900  3400 800 
-Connection ~ 3400 800 
-Wire Wire Line
-	3400 1100 3400 1200
-Connection ~ 3400 1200
-Wire Wire Line
-	3700 900  3700 800 
-Connection ~ 3700 800 
-Wire Wire Line
-	3700 1100 3700 1300
-Connection ~ 3700 1300
+	3300 1100 3300 1300
+Connection ~ 3300 1300
 $Comp
 L AP7365_SOT-23-5 U201
 U 1 1 5767CCA9
@@ -8382,4 +8372,15 @@ Wire Wire Line
 Connection ~ 9100 4100
 Text HLabel 9200 4100 2    60   Input ~ 0
 3V3_EXTRA
+Wire Wire Line
+	3900 1100 4000 1100
+Text HLabel 2900 800  0    60   Input ~ 0
+3V3_EXTRA
+Wire Wire Line
+	2900 800  3300 800 
+Wire Wire Line
+	3000 800  3000 900 
+Wire Wire Line
+	3300 800  3300 900 
+Connection ~ 3000 800 
 $EndSCHEMATC
