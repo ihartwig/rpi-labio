@@ -29,6 +29,8 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:labio-special
+LIBS:wise_logo
+LIBS:cmu_logo
 LIBS:labio-cache
 EELAYER 25 0
 EELAYER END

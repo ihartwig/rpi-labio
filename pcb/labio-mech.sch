@@ -29,6 +29,8 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:labio-special
+LIBS:wise_logo
+LIBS:cmu_logo
 LIBS:labio-cache
 EELAYER 25 0
 EELAYER END
@@ -156,4 +158,48 @@ F 3 "" H 5000 1900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5200 1900
+$Comp
+L WISE_LOGO G2
+U 1 1 5795B82C
+P 2300 3850
+F 0 "G2" H 2300 3632 60  0001 C CNN
+F 1 "WISE_LOGO" H 2300 4068 60  0001 C CNN
+F 2 "labio-special:wise_logo_fsilk_2.5mm" H 2300 3850 60  0001 C CNN
+F 3 "" H 2300 3850 60  0000 C CNN
+	1    2300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L WISE_LOGO G4
+U 1 1 5795B859
+P 4700 3850
+F 0 "G4" H 4700 3632 60  0001 C CNN
+F 1 "WISE_LOGO" H 4700 4068 60  0001 C CNN
+F 2 "labio-special:wise_logo_fcu_2.5mm" H 4700 3850 60  0001 C CNN
+F 3 "" H 4700 3850 60  0000 C CNN
+	1    4700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CMU_LOGO G1
+U 1 1 5795B878
+P 1850 4650
+F 0 "G1" H 1850 4439 60  0001 C CNN
+F 1 "CMU_LOGO" H 1850 4861 60  0001 C CNN
+F 2 "labio-special:cmu_logo_fsilk_3.7mm" H 1850 4650 60  0001 C CNN
+F 3 "" H 1850 4650 60  0000 C CNN
+	1    1850 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CMU_LOGO G3
+U 1 1 5795B8A5
+P 4250 4650
+F 0 "G3" H 4250 4439 60  0001 C CNN
+F 1 "CMU_LOGO" H 4250 4861 60  0001 C CNN
+F 2 "labio-special:cmu_logo_fcu_3.7mm" H 4250 4650 60  0001 C CNN
+F 3 "" H 4250 4650 60  0000 C CNN
+	1    4250 4650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

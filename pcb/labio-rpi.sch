@@ -29,6 +29,8 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:labio-special
+LIBS:wise_logo
+LIBS:cmu_logo
 LIBS:labio-cache
 EELAYER 25 0
 EELAYER END
@@ -50,7 +52,7 @@ U 1 1 57269431
 P 4250 2050
 F 0 "P1" H 4250 3100 50  0000 C CNN
 F 1 "CONN_02X20" V 4250 2050 50  0000 C CNN
-F 2 "labio-special:Pin_Header_Straight_TH-SMT_2x20" H 4250 1100 50  0001 C CNN
+F 2 "labio-special:Pin_Header_Straight_TH-SMT-NoPaste_2x20" H 4250 1100 50  0001 C CNN
 F 3 "" H 4250 1100 50  0000 C CNN
 	1    4250 2050
 	1    0    0    -1  
