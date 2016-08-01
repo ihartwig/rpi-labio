@@ -35,6 +35,10 @@ D Mechanical rotary encoder. Bourns PEC12R or similar.
 K Encoder
 $ENDCMP
 #
+$CMP WM8750
+D Stereo CODEC for Portable Audio Applications
+$ENDCMP
+#
 $CMP hole
 D Hole with optional net connection
 $ENDCMP
