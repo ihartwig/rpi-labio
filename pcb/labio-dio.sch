@@ -444,7 +444,7 @@ L R_Small R602
 U 1 1 576DAFF3
 P 1200 3300
 F 0 "R602" H 1230 3320 50  0000 L CNN
-F 1 "1k" H 1230 3260 50  0000 L CNN
+F 1 "10k" H 1230 3260 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603" H 1200 3300 50  0001 C CNN
 F 3 "" H 1200 3300 50  0000 C CNN
 	1    1200 3300
@@ -455,7 +455,7 @@ L R_Small R601
 U 1 1 576DB184
 P 900 3300
 F 0 "R601" H 930 3320 50  0000 L CNN
-F 1 "1k" H 930 3260 50  0000 L CNN
+F 1 "10k" H 930 3260 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603" H 900 3300 50  0001 C CNN
 F 3 "" H 900 3300 50  0000 C CNN
 	1    900  3300
@@ -716,8 +716,6 @@ F 3 "" H 6750 2850 50  0000 C CNN
 	1    6750 4050
 	1    0    0    -1  
 $EndComp
-Text HLabel 6500 3300 0    60   Input ~ 0
-VDD_3V3
 Text Label 7800 3300 2    60   ~ 0
 VDD_MOT
 Text Label 1600 3100 2    60   ~ 0
@@ -2261,4 +2259,8 @@ Wire Wire Line
 Wire Wire Line
 	7400 3200 7300 3200
 Connection ~ 7400 3100
+Text Notes 700  2950 0    60   ~ 0
+Pull up to max 3.3V\nto protect RPi.
+Text HLabel 6500 3300 0    60   Input ~ 0
+VDD_5V
 $EndSCHEMATC
