@@ -227,12 +227,12 @@ $EndComp
 $Comp
 L C_Small C602
 U 1 1 575D116B
-P 4300 1700
-F 0 "C602" H 4310 1770 50  0000 L CNN
-F 1 "0.1uF" H 4310 1620 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4300 1700 50  0001 C CNN
-F 3 "" H 4300 1700 50  0000 C CNN
-	1    4300 1700
+P 4100 1700
+F 0 "C602" H 4110 1770 50  0000 L CNN
+F 1 "0.1uF" H 4110 1620 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4100 1700 50  0001 C CNN
+F 3 "" H 4100 1700 50  0000 C CNN
+	1    4100 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -513,7 +513,7 @@ F 3 "" V 7200 3100 50  0000 C CNN
 	1    7200 3100
 	-1   0    0    1   
 $EndComp
-Text Label 7800 3000 2    60   ~ 0
+Text Label 8200 3000 2    60   ~ 0
 VDD_SERVO
 Text HLabel 6500 3200 0    60   Input ~ 0
 VDD_3V3
@@ -565,7 +565,7 @@ F 3 "" V 10000 3500 50  0000 C CNN
 	1    10000 3500
 	-1   0    0    1   
 $EndComp
-Text Label 10600 3400 2    60   ~ 0
+Text Label 11100 3400 2    60   ~ 0
 VDD_ENC
 Text HLabel 9300 3600 0    60   Input ~ 0
 VDD_3V3
@@ -1515,7 +1515,7 @@ F 3 "" H 8400 2300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1550 7000
-Text HLabel 3900 1500 0    60   Input ~ 0
+Text HLabel 5300 1350 0    60   Input ~ 0
 VS_MOTOR
 $Comp
 L CP_Small C608
@@ -1572,13 +1572,13 @@ Wire Wire Line
 Wire Wire Line
 	6900 1600 6900 1500
 Wire Wire Line
-	7300 1600 6500 1600
+	6500 1600 7300 1600
 Wire Wire Line
-	7300 1300 7300 1600
+	7300 1600 7300 1300
 Wire Wire Line
-	7500 1300 7300 1300
+	7300 1300 7500 1300
 Wire Wire Line
-	7500 1400 7500 1300
+	7500 1300 7500 1400
 Connection ~ 6500 1200
 Wire Wire Line
 	6900 1200 6900 1300
@@ -1586,12 +1586,11 @@ Wire Wire Line
 	6500 1200 6500 1300
 Wire Wire Line
 	6100 1200 6900 1200
-Connection ~ 4000 1500
 Connection ~ 6500 2550
 Wire Wire Line
-	6300 2550 6500 2550
+	6500 2550 6300 2550
 Wire Wire Line
-	6300 2400 6300 2550
+	6300 2550 6300 2400
 Wire Wire Line
 	6300 2100 6300 2200
 Connection ~ 6300 1800
@@ -2032,7 +2031,7 @@ Wire Wire Line
 Wire Wire Line
 	9900 3500 9800 3500
 Wire Wire Line
-	10100 3400 10600 3400
+	10100 3400 10500 3400
 Wire Wire Line
 	10100 3500 10200 3500
 Wire Wire Line
@@ -2105,7 +2104,7 @@ Wire Wire Line
 Wire Wire Line
 	10300 1700 9800 1700
 Wire Wire Line
-	4300 1900 5400 1900
+	4100 1900 5400 1900
 Connection ~ 5400 1700
 Wire Wire Line
 	5700 1700 5400 1700
@@ -2141,9 +2140,6 @@ Wire Wire Line
 	9500 2000 9600 2000
 Wire Wire Line
 	9500 2800 9600 2800
-Connection ~ 4300 1500
-Wire Wire Line
-	4300 1600 4300 1500
 Connection ~ 2100 1500
 Wire Wire Line
 	2100 1500 2100 1600
@@ -2155,8 +2151,6 @@ Wire Wire Line
 	2400 2000 2500 2000
 Wire Wire Line
 	2100 1800 2100 1900
-Wire Wire Line
-	4300 1900 4300 1800
 Connection ~ 8600 2900
 Wire Wire Line
 	8600 2100 10300 2100
@@ -2199,7 +2193,7 @@ Wire Wire Line
 	3200 3400 3200 3500
 Connection ~ 4000 3100
 Wire Wire Line
-	3900 3100 4000 3100
+	4000 3100 3900 3100
 Wire Wire Line
 	4000 3000 3900 3000
 Wire Wire Line
@@ -2210,12 +2204,6 @@ Wire Wire Line
 	2400 3400 2400 3000
 Wire Wire Line
 	2400 3000 2500 3000
-Wire Wire Line
-	4000 2000 3900 2000
-Wire Wire Line
-	4000 1500 4000 2000
-Wire Wire Line
-	3900 1500 5500 1500
 Wire Wire Line
 	5400 1600 5500 1600
 Wire Wire Line
@@ -2248,7 +2236,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 3100 7000 3100
 Wire Wire Line
-	7300 3000 7800 3000
+	7300 3000 7500 3000
 Wire Wire Line
 	7300 3100 7400 3100
 Wire Wire Line
@@ -2263,4 +2251,65 @@ Text Notes 700  2950 0    60   ~ 0
 Pull up to max 3.3V\nto protect RPi.
 Text HLabel 6500 3300 0    60   Input ~ 0
 VDD_5V
+$Comp
+L F_Small F601
+U 1 1 57A54BF2
+P 4400 1500
+F 0 "F601" H 4360 1560 50  0000 L CNN
+F 1 "F_Small" H 4280 1440 50  0000 L CNN
+F 2 "labio-special:OMNI-BLOCK_Fuse_10x5mm_Littelfuse" H 4400 1500 50  0001 C CNN
+F 3 "" H 4400 1500 50  0000 C CNN
+	1    4400 1500
+	-1   0    0    1   
+$EndComp
+Text Label 4100 1500 2    60   ~ 0
+VS_MOTOR_F
+$Comp
+L F_Small F602
+U 1 1 57A55915
+P 7600 3000
+F 0 "F602" H 7560 3060 50  0000 L CNN
+F 1 "F_Small" H 7480 2940 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 7600 3000 50  0001 C CNN
+F 3 "" H 7600 3000 50  0000 C CNN
+	1    7600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L F_Small F603
+U 1 1 57A55A67
+P 10600 3400
+F 0 "F603" H 10560 3460 50  0000 L CNN
+F 1 "F_Small" H 10480 3340 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 10600 3400 50  0001 C CNN
+F 3 "" H 10600 3400 50  0000 C CNN
+	1    10600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 3400 11100 3400
+Text Label 10500 3400 2    60   ~ 0
+VDD_ENC_F
+Wire Wire Line
+	7700 3000 8200 3000
+Text Label 7500 3000 2    60   ~ 0
+VDD_SERVO_F
+Wire Wire Line
+	5400 1500 5400 1350
+Wire Wire Line
+	5400 1350 5300 1350
+Connection ~ 5400 1500
+Wire Wire Line
+	4000 1500 4300 1500
+Wire Wire Line
+	4100 1500 4100 1600
+Wire Wire Line
+	4000 1500 4000 2000
+Wire Wire Line
+	4000 2000 3900 2000
+Connection ~ 4100 1500
+Wire Wire Line
+	4500 1500 5500 1500
+Wire Wire Line
+	4100 1800 4100 1900
 $EndSCHEMATC

@@ -759,7 +759,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 1900 4700 1900
 Text Label 4200 1900 0    60   ~ 0
-VDD3V3_J
+VDD3V3_J_F
 Wire Wire Line
 	3600 1900 3400 1900
 Wire Wire Line
@@ -915,4 +915,19 @@ F 3 "" H 7000 4200 50  0000 C CNN
 	1    7000 4200
 	1    0    0    -1  
 $EndComp
+$Comp
+L F_Small F701
+U 1 1 57A581AC
+P 2000 1000
+F 0 "F701" H 1960 1060 50  0000 L CNN
+F 1 "F_Small" H 1880 940 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 2000 1000 50  0001 C CNN
+F 3 "" H 2000 1000 50  0000 C CNN
+	1    2000 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1000 1200 1000
+Text Label 1200 1000 0    60   ~ 0
+VDD3V3_J_F
 $EndSCHEMATC
