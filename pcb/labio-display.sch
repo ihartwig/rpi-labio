@@ -37,12 +37,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 10
-Title ""
+Title "Raspberry Pi Embedded Lab I/O"
 Date ""
-Rev ""
-Comp ""
+Rev "1.1.4"
+Comp "Carnegie Mellon University"
 Comment1 ""
-Comment2 ""
+Comment2 "Drawn by: Ian Hartwig"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -77,7 +77,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 2400 6600 2400
 Connection ~ 6000 3500
-Text HLabel 3800 2900 0    60   Input ~ 0
+Text HLabel 3800 3200 0    60   Input ~ 0
 VDD_3V3
 Text HLabel 3800 2800 0    60   Input ~ 0
 ~CS
@@ -3307,7 +3307,7 @@ AD EF D3 00 00 00 00 5D 87 BB F2 00 00 00 00 00 3D 09 A1 3C 00 00 00 00 40 4F C2
 00 80 9E 84 BB F2 00 00 00 00 00 3D 09 A1 3C 00 00 00 00 40 4F 42 28 0F 00 00 00 00 D0 93 10 CA 
 03 00 00 00 00 F4 24 84 F2 00 00 00 00 00 3D 09 A1 3C 00 00 00 00 40 4F 42 28 0F 00 00 00 00 D0 
 93 10 CA 03 00 00 00 00 F4 24 84 F2 00 00 00 00 00 3D 09 A1 3C 00 00 00 00 40 4F FA 3F 4E 16 A4 
-A2 80 4C E9 AA 00 00 00 00 49 45 4E 44 AE 42 60 82 00 
+A2 80 4C E9 AA 00 00 00 00 49 45 4E 44 AE 42 60 82 3B 
 EndData
 $EndBitmap
 Text Notes 3350 3500 0    60   ~ 0
@@ -3346,8 +3346,6 @@ F 3 "" H 5600 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 2900 4000 2900
-Wire Wire Line
 	4000 2600 3800 2600
 Wire Wire Line
 	3800 2700 4000 2700
@@ -3359,10 +3357,6 @@ Wire Wire Line
 	6600 2700 4500 2700
 Wire Wire Line
 	4600 3400 6600 3400
-Wire Wire Line
-	4600 3400 4600 2900
-Wire Wire Line
-	4600 2900 4500 2900
 Wire Wire Line
 	6600 3300 6100 3300
 Wire Wire Line
@@ -3443,4 +3437,21 @@ F 3 "" H 5300 4700 60  0000 C CNN
 	1    5300 4700
 	1    0    0    -1  
 $EndComp
+$Comp
+L F_Small F401
+U 1 1 57AFAD90
+P 4250 3200
+F 0 "F401" H 4210 3260 50  0000 L CNN
+F 1 "F_Small" H 4130 3140 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 4250 3200 50  0001 C CNN
+F 3 "" H 4250 3200 50  0000 C CNN
+	1    4250 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3200 4600 3200
+Wire Wire Line
+	4600 3200 4600 3400
+Wire Wire Line
+	3800 3200 4150 3200
 $EndSCHEMATC

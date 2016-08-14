@@ -37,12 +37,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 10
-Title ""
+Title "Raspberry Pi Embedded Lab I/O"
 Date ""
-Rev ""
-Comp ""
+Rev "1.1.4"
+Comp "Carnegie Mellon University"
 Comment1 ""
-Comment2 ""
+Comment2 "Drawn by: Ian Hartwig"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -104,10 +104,10 @@ F 3 "" H 1500 2200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR052
+L GND #PWR053
 U 1 1 576ED307
 P 2300 2500
-F 0 "#PWR052" H 2300 2250 50  0001 C CNN
+F 0 "#PWR053" H 2300 2250 50  0001 C CNN
 F 1 "GND" H 2300 2350 50  0000 C CNN
 F 2 "" H 2300 2500 50  0000 C CNN
 F 3 "" H 2300 2500 50  0000 C CNN
@@ -126,10 +126,10 @@ F 3 "" H 3200 2800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR053
+L GND #PWR054
 U 1 1 576ED314
 P 4000 3100
-F 0 "#PWR053" H 4000 2850 50  0001 C CNN
+F 0 "#PWR054" H 4000 2850 50  0001 C CNN
 F 1 "GND" H 4000 2950 50  0000 C CNN
 F 2 "" H 4000 3100 50  0000 C CNN
 F 3 "" H 4000 3100 50  0000 C CNN
@@ -181,10 +181,10 @@ F 3 "" H 4900 2200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR054
+L GND #PWR055
 U 1 1 576ED336
 P 5700 2500
-F 0 "#PWR054" H 5700 2250 50  0001 C CNN
+F 0 "#PWR055" H 5700 2250 50  0001 C CNN
 F 1 "GND" H 5700 2350 50  0000 C CNN
 F 2 "" H 5700 2500 50  0000 C CNN
 F 3 "" H 5700 2500 50  0000 C CNN

@@ -25,6 +25,12 @@ $CMP LSM303D
 D Ultra-compact high-performance eCompass module: 3D accelerometer and 3D magnetometer
 $ENDCMP
 #
+$CMP OPA344_SOT23-5
+D Op Amp in 5-pin package
+K op amp amplifier operational 
+F http://www.ti.com/lit/gpn/opa376
+$ENDCMP
+#
 $CMP PHOTOTRANSISTOR
 D Transistor NPN (general)
 K npn transistor

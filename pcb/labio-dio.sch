@@ -37,12 +37,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 10
-Title ""
+Title "Raspberry Pi Embedded Lab I/O"
 Date ""
-Rev ""
-Comp ""
+Rev "1.1.4"
+Comp "Carnegie Mellon University"
 Comment1 ""
-Comment2 ""
+Comment2 "Drawn by: Ian Hartwig"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -94,7 +94,7 @@ Text Notes 8600 1200 0    60   ~ 0
 Quadrature Encoder Pins\n\nUS Digital S1 Pinout.\nJumper for power source.\nDiodes for 5V levels and multiplexing.\nUse RPi pull-ups.
 Text Notes 6200 1000 0    60   ~ 0
 Servo Pins\n\nGround, voltage, signal headers.\nJumper for power source.
-Text Notes 700  1200 0    60   ~ 0
+Text Notes 700  900  0    60   ~ 0
 Motor Driver\n\n2x DC Motors or 1x Bipolor Stepper Motor
 $Comp
 L CONN_01X02 P601
@@ -716,15 +716,13 @@ F 3 "" H 6750 2850 50  0000 C CNN
 	1    6750 4050
 	1    0    0    -1  
 $EndComp
-Text Label 7800 3300 2    60   ~ 0
-VDD_MOT
 Text Label 1600 3100 2    60   ~ 0
 VDD_MOT
-Text Label 700  1500 0    60   ~ 0
+Text Label 2400 1200 2    60   ~ 0
 VDD_MOT
-Text HLabel 9300 3700 0    60   Input ~ 0
+Text HLabel 2500 4700 0    60   Input ~ 0
 VDD_3V3
-Text Label 10600 3700 2    60   ~ 0
+Text Label 3100 4700 2    60   ~ 0
 VDD_LED
 Text Label 700  6400 0    60   ~ 0
 VDD_LED
@@ -1005,13 +1003,13 @@ $EndComp
 $Comp
 L R_Small R620
 U 1 1 576F8F6D
-P 5700 5700
-F 0 "R620" H 5730 5720 50  0000 L CNN
-F 1 "20k" H 5730 5660 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 5700 5700 50  0001 C CNN
-F 3 "" H 5700 5700 50  0000 C CNN
-	1    5700 5700
-	1    0    0    -1  
+P 5700 5200
+F 0 "R620" H 5730 5220 50  0000 L CNN
+F 1 "20k" H 5730 5160 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 5700 5200 50  0001 C CNN
+F 3 "" H 5700 5200 50  0000 C CNN
+	1    5700 5200
+	-1   0    0    1   
 $EndComp
 $Comp
 L Led_Small D609
@@ -1060,13 +1058,13 @@ $EndComp
 $Comp
 L R_Small R621
 U 1 1 576F8F95
-P 5700 7200
-F 0 "R621" H 5730 7220 50  0000 L CNN
-F 1 "20k" H 5730 7160 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 5700 7200 50  0001 C CNN
-F 3 "" H 5700 7200 50  0000 C CNN
-	1    5700 7200
-	1    0    0    -1  
+P 5700 6700
+F 0 "R621" H 5730 6720 50  0000 L CNN
+F 1 "20k" H 5730 6660 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 5700 6700 50  0001 C CNN
+F 3 "" H 5700 6700 50  0000 C CNN
+	1    5700 6700
+	-1   0    0    1   
 $EndComp
 Text Label 5200 6400 0    60   ~ 0
 VDD_LED
@@ -1121,13 +1119,13 @@ $EndComp
 $Comp
 L R_Small R625
 U 1 1 576FAF6D
-P 7200 5700
-F 0 "R625" H 7230 5720 50  0000 L CNN
-F 1 "20k" H 7230 5660 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 7200 5700 50  0001 C CNN
-F 3 "" H 7200 5700 50  0000 C CNN
-	1    7200 5700
-	1    0    0    -1  
+P 7200 5200
+F 0 "R625" H 7230 5220 50  0000 L CNN
+F 1 "20k" H 7230 5160 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 7200 5200 50  0001 C CNN
+F 3 "" H 7200 5200 50  0000 C CNN
+	1    7200 5200
+	-1   0    0    1   
 $EndComp
 Text Label 6700 4900 0    60   ~ 0
 VDD_LED
@@ -1178,13 +1176,13 @@ $EndComp
 $Comp
 L R_Small R628
 U 1 1 576FAF9A
-P 8700 5700
-F 0 "R628" H 8730 5720 50  0000 L CNN
-F 1 "20k" H 8730 5660 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 8700 5700 50  0001 C CNN
-F 3 "" H 8700 5700 50  0000 C CNN
-	1    8700 5700
-	1    0    0    -1  
+P 8700 5200
+F 0 "R628" H 8730 5220 50  0000 L CNN
+F 1 "20k" H 8730 5160 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 8700 5200 50  0001 C CNN
+F 3 "" H 8700 5200 50  0000 C CNN
+	1    8700 5200
+	-1   0    0    1   
 $EndComp
 Text Label 8200 4900 0    60   ~ 0
 VDD_LED
@@ -1235,13 +1233,13 @@ $EndComp
 $Comp
 L R_Small R632
 U 1 1 576FAFC7
-P 10200 5700
-F 0 "R632" H 10230 5720 50  0000 L CNN
-F 1 "20k" H 10230 5660 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 10200 5700 50  0001 C CNN
-F 3 "" H 10200 5700 50  0000 C CNN
-	1    10200 5700
-	1    0    0    -1  
+P 10200 5200
+F 0 "R632" H 10230 5220 50  0000 L CNN
+F 1 "20k" H 10230 5160 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 10200 5200 50  0001 C CNN
+F 3 "" H 10200 5200 50  0000 C CNN
+	1    10200 5200
+	-1   0    0    1   
 $EndComp
 Text Label 9700 4900 0    60   ~ 0
 VDD_LED
@@ -1292,13 +1290,13 @@ $EndComp
 $Comp
 L R_Small R629
 U 1 1 576FAFF4
-P 8700 7200
-F 0 "R629" H 8730 7220 50  0000 L CNN
-F 1 "20k" H 8730 7160 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 8700 7200 50  0001 C CNN
-F 3 "" H 8700 7200 50  0000 C CNN
-	1    8700 7200
-	1    0    0    -1  
+P 8700 6700
+F 0 "R629" H 8730 6720 50  0000 L CNN
+F 1 "20k" H 8730 6660 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 8700 6700 50  0001 C CNN
+F 3 "" H 8700 6700 50  0000 C CNN
+	1    8700 6700
+	-1   0    0    1   
 $EndComp
 Text Label 8200 6400 0    60   ~ 0
 VDD_LED
@@ -1451,24 +1449,24 @@ VS_MOTOR
 $Comp
 L Led_Small D601
 U 1 1 57708D41
-P 1300 1800
-F 0 "D601" H 1250 1925 50  0000 L CNN
-F 1 "Led_Small" H 1125 1700 50  0000 L CNN
-F 2 "LEDs:LED-0603" V 1300 1800 50  0001 C CNN
-F 3 "" V 1300 1800 50  0000 C CNN
-	1    1300 1800
-	-1   0    0    1   
+P 1700 1400
+F 0 "D601" H 1650 1525 50  0000 L CNN
+F 1 "Led_Small" H 1525 1300 50  0000 L CNN
+F 2 "LEDs:LED-0603" V 1700 1400 50  0001 C CNN
+F 3 "" V 1700 1400 50  0000 C CNN
+	1    1700 1400
+	0    -1   -1   0   
 $EndComp
 $Comp
 L R_Small R607
 U 1 1 57708E84
-P 1700 1800
-F 0 "R607" H 1730 1820 50  0000 L CNN
-F 1 "220" H 1730 1760 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 1700 1800 50  0001 C CNN
-F 3 "" H 1700 1800 50  0000 C CNN
-	1    1700 1800
-	0    1    1    0   
+P 1700 1700
+F 0 "R607" H 1730 1720 50  0000 L CNN
+F 1 "220" H 1730 1660 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 1700 1700 50  0001 C CNN
+F 3 "" H 1700 1700 50  0000 C CNN
+	1    1700 1700
+	1    0    0    -1  
 $EndComp
 $Comp
 L Led_Small D610
@@ -1608,18 +1606,7 @@ Wire Wire Line
 	8400 2400 8400 2500
 Connection ~ 2100 1850
 Wire Wire Line
-	2000 1850 2100 1850
-Wire Wire Line
-	2000 1800 2000 1850
-Wire Wire Line
-	1800 1800 2000 1800
-Wire Wire Line
-	1400 1800 1600 1800
-Connection ~ 900  1500
-Wire Wire Line
-	900  1800 900  1500
-Wire Wire Line
-	1200 1800 900  1800
+	1700 1850 2100 1850
 Wire Wire Line
 	10300 6400 9700 6400
 Connection ~ 10200 7000
@@ -1691,18 +1678,8 @@ Wire Wire Line
 	8800 6400 8200 6400
 Connection ~ 8700 7000
 Wire Wire Line
-	8700 7000 8700 7100
-Wire Wire Line
 	8600 7000 8800 7000
 Connection ~ 9100 7300
-Wire Wire Line
-	9000 7300 9100 7300
-Wire Wire Line
-	9000 7400 9000 7300
-Wire Wire Line
-	8700 7400 9000 7400
-Wire Wire Line
-	8700 7300 8700 7400
 Wire Wire Line
 	9100 6400 9000 6400
 Wire Wire Line
@@ -1715,18 +1692,7 @@ Wire Wire Line
 	10300 4900 9700 4900
 Connection ~ 10200 5500
 Wire Wire Line
-	10200 5500 10200 5600
-Wire Wire Line
 	10100 5500 10300 5500
-Connection ~ 10600 5800
-Wire Wire Line
-	10500 5800 10600 5800
-Wire Wire Line
-	10500 5900 10500 5800
-Wire Wire Line
-	10200 5900 10500 5900
-Wire Wire Line
-	10200 5800 10200 5900
 Wire Wire Line
 	10600 4900 10500 4900
 Wire Wire Line
@@ -1739,18 +1705,7 @@ Wire Wire Line
 	8800 4900 8200 4900
 Connection ~ 8700 5500
 Wire Wire Line
-	8700 5500 8700 5600
-Wire Wire Line
 	8600 5500 8800 5500
-Connection ~ 9100 5800
-Wire Wire Line
-	9000 5800 9100 5800
-Wire Wire Line
-	9000 5900 9000 5800
-Wire Wire Line
-	8700 5900 9000 5900
-Wire Wire Line
-	8700 5800 8700 5900
 Wire Wire Line
 	9100 4900 9000 4900
 Wire Wire Line
@@ -1763,18 +1718,7 @@ Wire Wire Line
 	7300 4900 6700 4900
 Connection ~ 7200 5500
 Wire Wire Line
-	7200 5500 7200 5600
-Wire Wire Line
 	7100 5500 7300 5500
-Connection ~ 7600 5800
-Wire Wire Line
-	7500 5800 7600 5800
-Wire Wire Line
-	7500 5900 7500 5800
-Wire Wire Line
-	7200 5900 7500 5900
-Wire Wire Line
-	7200 5800 7200 5900
 Wire Wire Line
 	7600 4900 7500 4900
 Wire Wire Line
@@ -1784,8 +1728,6 @@ Wire Wire Line
 Wire Wire Line
 	7600 5700 7600 5900
 Connection ~ 5700 7000
-Wire Wire Line
-	5700 7000 5700 7100
 Wire Wire Line
 	5600 7000 5800 7000
 Connection ~ 4200 7050
@@ -1809,18 +1751,7 @@ Wire Wire Line
 	5800 4900 5200 4900
 Connection ~ 5700 5500
 Wire Wire Line
-	5700 5500 5700 5600
-Wire Wire Line
 	5600 5500 5800 5500
-Connection ~ 6100 7300
-Wire Wire Line
-	6000 7300 6100 7300
-Wire Wire Line
-	6000 7400 6000 7300
-Wire Wire Line
-	5700 7400 6000 7400
-Wire Wire Line
-	5700 7300 5700 7400
 Wire Wire Line
 	6100 6400 6000 6400
 Wire Wire Line
@@ -1829,15 +1760,6 @@ Wire Wire Line
 	6100 6400 6100 6500
 Wire Wire Line
 	6100 7200 6100 7400
-Connection ~ 6100 5800
-Wire Wire Line
-	6000 5800 6100 5800
-Wire Wire Line
-	6000 5900 6000 5800
-Wire Wire Line
-	5700 5900 6000 5900
-Wire Wire Line
-	5700 5800 5700 5900
 Wire Wire Line
 	6100 4900 6000 4900
 Wire Wire Line
@@ -1936,10 +1858,6 @@ Wire Wire Line
 	1300 6400 700  6400
 Wire Wire Line
 	1300 4900 700  4900
-Wire Wire Line
-	9800 3700 10600 3700
-Wire Wire Line
-	7000 3300 7800 3300
 Connection ~ 1200 5500
 Wire Wire Line
 	1200 5500 1200 5600
@@ -2140,13 +2058,10 @@ Wire Wire Line
 	9500 2000 9600 2000
 Wire Wire Line
 	9500 2800 9600 2800
-Connection ~ 2100 1500
 Wire Wire Line
-	2100 1500 2100 1600
+	2100 1200 2100 1600
 Wire Wire Line
-	700  1500 2400 1500
-Wire Wire Line
-	2400 1500 2400 2000
+	2400 1200 2400 2000
 Wire Wire Line
 	2400 2000 2500 2000
 Wire Wire Line
@@ -2249,7 +2164,7 @@ Wire Wire Line
 Connection ~ 7400 3100
 Text Notes 700  2950 0    60   ~ 0
 Pull up to max 3.3V\nto protect RPi.
-Text HLabel 6500 3300 0    60   Input ~ 0
+Text HLabel 1100 1200 0    60   Input ~ 0
 VDD_5V
 $Comp
 L F_Small F601
@@ -2312,4 +2227,59 @@ Wire Wire Line
 	4500 1500 5500 1500
 Wire Wire Line
 	4100 1800 4100 1900
+Wire Wire Line
+	2500 4700 3100 4700
+$Comp
+L F_Small F604
+U 1 1 57AFC1F2
+P 1300 1200
+F 0 "F604" H 1260 1260 50  0000 L CNN
+F 1 "F_Small" H 1180 1140 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 1300 1200 50  0001 C CNN
+F 3 "" H 1300 1200 50  0000 C CNN
+	1    1300 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1800 1700 1850
+Wire Wire Line
+	1700 1500 1700 1600
+Wire Wire Line
+	1100 1200 1200 1200
+Wire Wire Line
+	1400 1200 2400 1200
+Wire Wire Line
+	1700 1200 1700 1300
+Connection ~ 1700 1200
+Connection ~ 2100 1200
+Wire Wire Line
+	5700 6600 5700 6400
+Connection ~ 5700 6400
+Wire Wire Line
+	5700 6800 5700 7000
+Wire Wire Line
+	5700 5100 5700 4900
+Connection ~ 5700 4900
+Wire Wire Line
+	5700 5300 5700 5500
+Wire Wire Line
+	7200 5100 7200 4900
+Connection ~ 7200 4900
+Wire Wire Line
+	7200 5300 7200 5500
+Wire Wire Line
+	8700 5100 8700 4900
+Connection ~ 8700 4900
+Wire Wire Line
+	8700 5500 8700 5300
+Wire Wire Line
+	10200 5300 10200 5500
+Wire Wire Line
+	10200 5100 10200 4900
+Connection ~ 10200 4900
+Wire Wire Line
+	8700 6600 8700 6400
+Connection ~ 8700 6400
+Wire Wire Line
+	8700 7000 8700 6800
 $EndSCHEMATC

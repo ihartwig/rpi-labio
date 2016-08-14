@@ -37,12 +37,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 10
-Title ""
+Title "Raspberry Pi Embedded Lab I/O"
 Date ""
-Rev ""
-Comp ""
+Rev "1.1.4"
+Comp "Carnegie Mellon University"
 Comment1 ""
-Comment2 ""
+Comment2 "Drawn by: Ian Hartwig"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -58,10 +58,10 @@ F 3 "" H 5000 1850 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR055
+L GND #PWR056
 U 1 1 57782798
 P 6300 2000
-F 0 "#PWR055" H 6300 1750 50  0001 C CNN
+F 0 "#PWR056" H 6300 1750 50  0001 C CNN
 F 1 "GND" H 6300 1850 50  0000 C CNN
 F 2 "" H 6300 2000 50  0000 C CNN
 F 3 "" H 6300 2000 50  0000 C CNN

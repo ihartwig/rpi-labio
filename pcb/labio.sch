@@ -37,12 +37,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 10
-Title ""
+Title "Raspberry Pi Embedded Lab I/O"
 Date ""
-Rev ""
-Comp ""
+Rev "1.1.4"
+Comp "Carnegie Mellon University"
 Comment1 ""
-Comment2 ""
+Comment2 "Drawn by: Ian Hartwig"
 Comment3 ""
 Comment4 ""
 $EndDescr

@@ -37,12 +37,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 10
-Title ""
+Title "Raspberry Pi Embedded Lab I/O"
 Date ""
-Rev ""
-Comp ""
+Rev "1.1.4"
+Comp "Carnegie Mellon University"
 Comment1 ""
-Comment2 ""
+Comment2 "Drawn by: Ian Hartwig"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -116,7 +116,7 @@ Text HLabel 6500 6800 2    60   Input ~ 0
 SCL
 Text HLabel 6500 6900 2    60   Input ~ 0
 SDA
-Text HLabel 6500 6700 2    60   Input ~ 0
+Text HLabel 6500 6400 2    60   Input ~ 0
 VDD3V3
 Wire Wire Line
 	7100 2200 6500 2200
@@ -172,8 +172,6 @@ F 3 "" H 6150 5650 50  0000 C CNN
 	1    6150 6850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6500 6700 6400 6700
 Wire Wire Line
 	6400 6800 6500 6800
 Wire Wire Line
@@ -257,14 +255,12 @@ F 3 "" H 2100 6600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 6700 5900 6700
-Wire Wire Line
 	5300 6800 5900 6800
 Wire Wire Line
 	5900 6900 5300 6900
 Wire Wire Line
 	5300 7000 5900 7000
-Text Label 5300 6700 0    60   ~ 0
+Text Label 5300 6400 0    60   ~ 0
 VDD3V3_J
 Text Label 5300 6800 0    60   ~ 0
 SCL_J
@@ -449,7 +445,7 @@ $EndComp
 Wire Wire Line
 	5000 7400 5000 7300
 Wire Wire Line
-	5000 6700 5000 6800
+	5000 6400 5000 6800
 $Comp
 L GND #PWR015
 U 1 1 578C4F45
@@ -843,7 +839,7 @@ $EndComp
 Wire Wire Line
 	4100 7400 4100 7200
 Wire Wire Line
-	4100 7000 4100 6500
+	4100 6500 4100 7000
 Wire Wire Line
 	4100 6900 3300 6900
 Connection ~ 4100 6900
@@ -864,4 +860,19 @@ Text Label 3700 6900 2    60   ~ 0
 BMP_ADDR
 Text Label 4700 6200 2    60   ~ 0
 VDD3V3_J
+$Comp
+L F_Small F501
+U 1 1 57AFA57A
+P 6150 6400
+F 0 "F501" H 6110 6460 50  0000 L CNN
+F 1 "F_Small" H 6030 6340 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 6150 6400 50  0001 C CNN
+F 3 "" H 6150 6400 50  0000 C CNN
+	1    6150 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 6400 6500 6400
+Wire Wire Line
+	6050 6400 5000 6400
 $EndSCHEMATC
