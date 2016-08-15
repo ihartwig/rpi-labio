@@ -47,7 +47,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 5100 1600 0    60   ~ 0
-6-DOF Accelerometer + Compass\n\nKeep currents higher than 10mA\na few mm away from compass.\n\n7-bit I2C Addr: 
+6-DOF Accelerometer + Compass\n\nKeep currents higher than 10mA\na few mm away from compass.\n\n7-bit I2C Addr: 0x1E (0011110)
 $Comp
 L GND #PWR010
 U 1 1 5762DC6A
@@ -156,7 +156,7 @@ F 3 "" H 1100 7400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 2100 6200 0    60   ~ 0
-Pressure + Temperature\n\n7-bit I2C Addr: 0x77
+Pressure + Temperature\n\n7-bit I2C Addr: 0x76 (1110110)
 Text Notes 1900 1800 0    60   ~ 0
 0.5mA max
 Text Notes 800  6500 0    60   ~ 0
@@ -686,38 +686,19 @@ F 3 "" H 5800 4650 60  0000 C CNN
 	1    5800 4700
 	1    0    0    -1  
 $EndComp
-$Comp
-L R_Small R505
-U 1 1 578C603B
-P 6700 5200
-F 0 "R505" H 6730 5220 50  0000 L CNN
-F 1 "0" H 6730 5160 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 6700 5200 50  0001 C CNN
-F 3 "" H 6700 5200 50  0000 C CNN
-	1    6700 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6700 5100 6700 5050
-Wire Wire Line
-	6700 5050 6600 5050
-Wire Wire Line
-	6600 5050 6600 5200
 Wire Wire Line
 	6600 5200 6500 5200
 $Comp
 L GND #PWR017
 U 1 1 578C6171
-P 6700 5400
-F 0 "#PWR017" H 6700 5150 50  0001 C CNN
-F 1 "GND" H 6700 5250 50  0000 C CNN
-F 2 "" H 6700 5400 50  0000 C CNN
-F 3 "" H 6700 5400 50  0000 C CNN
-	1    6700 5400
+P 6600 5400
+F 0 "#PWR017" H 6600 5150 50  0001 C CNN
+F 1 "GND" H 6600 5250 50  0000 C CNN
+F 2 "" H 6600 5400 50  0000 C CNN
+F 3 "" H 6600 5400 50  0000 C CNN
+	1    6600 5400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6700 5400 6700 5300
 $Comp
 L C_Small C508
 U 1 1 578C6A28
@@ -753,7 +734,7 @@ Wire Wire Line
 	2500 2500 2500 2800
 Connection ~ 2800 2800
 Text Notes 5100 4100 0    60   ~ 0
-3-DOF Gyroscope\n\n7-bit I2C Addr: 
+3-DOF Gyroscope\n\n7-bit I2C Addr: 0x6A (1101010)
 Wire Wire Line
 	1100 7400 1100 7100
 Wire Wire Line
@@ -875,4 +856,6 @@ Wire Wire Line
 	6250 6400 6500 6400
 Wire Wire Line
 	6050 6400 5000 6400
+Wire Wire Line
+	6600 5400 6600 5200
 $EndSCHEMATC

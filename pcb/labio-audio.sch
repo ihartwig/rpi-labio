@@ -517,9 +517,9 @@ Wire Wire Line
 Wire Wire Line
 	4800 3000 5300 3000
 Text Notes 1200 2200 0    60   ~ 0
-I2S Audio\nRPi drives MCLK, SDIN.\nCodec drives BCLK, LRCLK, SDOUT.
+I2S Audio\nRPi drives MCLK, SDIN.\nCodec drives BCLK, LRCLK, SDOUT.\nWrite LRCM=1 to use ADCLRC as LRCLK.
 Text Notes 1200 2800 0    60   ~ 0
-I2C (2 wire) Ctrl\n7-bit addr: 0x34
+I2C (2 wire) Ctrl\n7-bit addr: 0x1A (0011010)
 Wire Wire Line
 	4700 2400 5300 2400
 Wire Wire Line
