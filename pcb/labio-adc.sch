@@ -39,7 +39,7 @@ encoding utf-8
 Sheet 3 10
 Title "Raspberry Pi Embedded Lab I/O"
 Date ""
-Rev "1.1.4"
+Rev "1.2.0"
 Comp "Carnegie Mellon University"
 Comment1 ""
 Comment2 "Drawn by: Ian Hartwig"

@@ -39,7 +39,7 @@ encoding utf-8
 Sheet 4 10
 Title "Raspberry Pi Embedded Lab I/O"
 Date ""
-Rev "1.1.4"
+Rev "1.2.0"
 Comp "Carnegie Mellon University"
 Comment1 ""
 Comment2 "Drawn by: Ian Hartwig"
@@ -79,9 +79,8 @@ Wire Wire Line
 Connection ~ 6000 3500
 Text HLabel 3800 3200 0    60   Input ~ 0
 VDD_3V3
-Text HLabel 3800 2800 0    60   Input ~ 0
+Text HLabel 3800 2900 0    60   Input ~ 0
 ~CS
-NoConn ~ 6600 2800
 Text HLabel 3800 2700 0    60   Input ~ 0
 SCK
 Text HLabel 3800 2600 0    60   Input ~ 0
@@ -3307,7 +3306,7 @@ AD EF D3 00 00 00 00 5D 87 BB F2 00 00 00 00 00 3D 09 A1 3C 00 00 00 00 40 4F C2
 00 80 9E 84 BB F2 00 00 00 00 00 3D 09 A1 3C 00 00 00 00 40 4F 42 28 0F 00 00 00 00 D0 93 10 CA 
 03 00 00 00 00 F4 24 84 F2 00 00 00 00 00 3D 09 A1 3C 00 00 00 00 40 4F 42 28 0F 00 00 00 00 D0 
 93 10 CA 03 00 00 00 00 F4 24 84 F2 00 00 00 00 00 3D 09 A1 3C 00 00 00 00 40 4F FA 3F 4E 16 A4 
-A2 80 4C E9 AA 00 00 00 00 49 45 4E 44 AE 42 60 82 A3 
+A2 80 4C E9 AA 00 00 00 00 49 45 4E 44 AE 42 60 82 FF 
 EndData
 $EndBitmap
 Text Notes 3350 3500 0    60   ~ 0
@@ -3400,10 +3399,10 @@ Wire Wire Line
 	6600 3000 6100 3000
 Text Label 6100 3000 0    60   ~ 0
 ~OLED_CS
-Text Label 4600 2800 0    60   ~ 0
+Text Label 4900 2900 2    60   ~ 0
 ~OLED_CS
 Wire Wire Line
-	4500 2800 5000 2800
+	4500 2800 4900 2800
 Text Label 6100 2700 0    60   ~ 0
 OLED_SCK
 Text Label 6100 2600 0    60   ~ 0
@@ -3454,4 +3453,16 @@ Wire Wire Line
 	4600 3200 4600 3400
 Wire Wire Line
 	3800 3200 4150 3200
+Wire Wire Line
+	6600 2800 6100 2800
+Text Label 6100 2800 0    60   ~ 0
+OLED_DC
+Wire Wire Line
+	4500 2900 4900 2900
+Text Label 4900 2800 2    60   ~ 0
+OLED_DC
+Text HLabel 3800 2800 0    60   Input ~ 0
+DC
+Wire Wire Line
+	3800 2900 4000 2900
 $EndSCHEMATC

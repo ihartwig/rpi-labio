@@ -39,7 +39,7 @@ encoding utf-8
 Sheet 1 10
 Title "Raspberry Pi Embedded Lab I/O"
 Date ""
-Rev "1.1.4"
+Rev "1.2.0"
 Comp "Carnegie Mellon University"
 Comment1 ""
 Comment2 "Drawn by: Ian Hartwig"
@@ -102,6 +102,7 @@ F2 "VDD_3V3" I L 3700 3500 60
 F3 "~CS" I L 3700 4000 60 
 F4 "SCK" I L 3700 3900 60 
 F5 "MOSI" I L 3700 3800 60 
+F6 "DC" I L 3700 4100 60 
 $EndSheet
 $Sheet
 S 8300 1000 1400 1300
@@ -425,4 +426,12 @@ U 578DDEC2
 F0 "labio-mech" 60
 F1 "labio-mech.sch" 60
 $EndSheet
+Wire Wire Line
+	2500 4200 3200 4200
+Wire Wire Line
+	3200 4200 3200 4100
+Wire Wire Line
+	3200 4100 3700 4100
+Text Notes 3750 4650 0    60   ~ 0
+Use MISO as output to\nsupport 4-wire SPI. MUST\nchange to input on CS\ndeassert for other SPI devs.
 $EndSCHEMATC
