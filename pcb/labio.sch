@@ -103,6 +103,7 @@ F3 "~CS" I L 3700 4000 60
 F4 "SCK" I L 3700 3900 60 
 F5 "MOSI" I L 3700 3800 60 
 F6 "DC" I L 3700 4100 60 
+F7 "~RES_ALT" I L 3700 4200 60 
 $EndSheet
 $Sheet
 S 8300 1000 1400 1300
@@ -434,4 +435,9 @@ Wire Wire Line
 	3200 4100 3700 4100
 Text Notes 3750 4650 0    60   ~ 0
 Use MISO as output to\nsupport 4-wire SPI. MUST\nchange to input on CS\ndeassert for other SPI devs.
+Wire Wire Line
+	3700 4200 3600 4200
+Wire Wire Line
+	3600 4200 3600 5200
+Connection ~ 3600 5200
 $EndSCHEMATC

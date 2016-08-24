@@ -3312,14 +3312,14 @@ $EndBitmap
 Text Notes 3350 3500 0    60   ~ 0
 20mA approx max
 $Comp
-L R_Small R401
+L R_Small R405
 U 1 1 5766D812
-P 5000 3200
-F 0 "R401" H 5030 3220 50  0000 L CNN
-F 1 "0" H 5030 3160 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 5000 3200 50  0001 C CNN
-F 3 "" H 5000 3200 50  0000 C CNN
-	1    5000 3200
+P 2200 3100
+F 0 "R405" H 2230 3120 50  0000 L CNN
+F 1 "dnp-47k" H 2230 3060 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 2200 3100 50  0001 C CNN
+F 3 "" H 2200 3100 50  0000 C CNN
+	1    2200 3100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3372,13 +3372,6 @@ Wire Wire Line
 Wire Wire Line
 	5600 3300 5600 3400
 Connection ~ 5600 3400
-Wire Wire Line
-	5000 3300 5000 3400
-Connection ~ 5000 3400
-Wire Wire Line
-	6600 2900 5000 2900
-Wire Wire Line
-	5000 2900 5000 3100
 $Comp
 L R_Small R402
 U 1 1 576D7E44
@@ -3465,4 +3458,111 @@ Text HLabel 3800 2800 0    60   Input ~ 0
 DC
 Wire Wire Line
 	3800 2900 4000 2900
+$Comp
+L C_Small C401
+U 1 1 57BD0C4A
+P 2000 3500
+F 0 "C401" H 2010 3570 50  0000 L CNN
+F 1 "4.7uF" H 2010 3420 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2000 3500 50  0001 C CNN
+F 3 "" H 2000 3500 50  0000 C CNN
+	1    2000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R404
+U 1 1 57BD0DE0
+P 1800 3100
+F 0 "R404" H 1830 3120 50  0000 L CNN
+F 1 "dnp-0" H 1830 3060 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 1800 3100 50  0001 C CNN
+F 3 "" H 1800 3100 50  0000 C CNN
+	1    1800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R401
+U 1 1 57BD0E72
+P 1400 3100
+F 0 "R401" H 1430 3120 50  0000 L CNN
+F 1 "0" H 1430 3060 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 1400 3100 50  0001 C CNN
+F 3 "" H 1400 3100 50  0000 C CNN
+	1    1400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R406
+U 1 1 57BD0EA6
+P 2200 3900
+F 0 "R406" H 2230 3920 50  0000 L CNN
+F 1 "dnp-0" H 2230 3860 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 2200 3900 50  0001 C CNN
+F 3 "" H 2200 3900 50  0000 C CNN
+	1    2200 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2900 6100 2900
+Wire Wire Line
+	1400 3000 1400 2900
+Wire Wire Line
+	1400 2900 1350 2900
+$Comp
+L GND #PWR010
+U 1 1 57BD11F8
+P 2000 4200
+F 0 "#PWR010" H 2000 3950 50  0001 C CNN
+F 1 "GND" H 2000 4050 50  0000 C CNN
+F 2 "" H 2000 4200 50  0000 C CNN
+F 3 "" H 2000 4200 50  0000 C CNN
+	1    2000 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4200 2000 3600
+Wire Wire Line
+	1400 3200 1400 3300
+Wire Wire Line
+	1400 3300 2800 3300
+Wire Wire Line
+	2000 3300 2000 3400
+Wire Wire Line
+	1800 3300 1800 3200
+Connection ~ 1800 3300
+Connection ~ 2000 3300
+Wire Wire Line
+	2200 3200 2200 3300
+Connection ~ 2200 3300
+Wire Wire Line
+	1800 3000 1800 2800
+Wire Wire Line
+	1800 2800 1100 2800
+Wire Wire Line
+	2200 3000 2200 2700
+Wire Wire Line
+	2200 2700 900  2700
+Text Label 4700 3400 0    60   ~ 0
+VDD_3V3_F
+Text Label 900  2700 0    60   ~ 0
+VDD_3V3_F
+Text Label 2800 3300 2    60   ~ 0
+~OLED_RES
+Wire Wire Line
+	2200 3700 2800 3700
+Text Label 2800 3700 2    60   ~ 0
+~OLED_CS
+Text HLabel 1100 2800 0    60   Input ~ 0
+~CS
+Text HLabel 1350 2900 0    60   Input ~ 0
+~RES_ALT
+Wire Wire Line
+	2200 3700 2200 3800
+Wire Wire Line
+	2200 4000 2200 4100
+Wire Wire Line
+	2200 4100 2000 4100
+Connection ~ 2000 4100
+Text Notes 900  2100 0    60   ~ 0
+Backup options for OLED reset line\n\nGPIO control on CS or alt or driven\nfrom VDD with an RC delay > 110ms.
 $EndSCHEMATC
