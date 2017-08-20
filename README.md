@@ -1,8 +1,10 @@
 # rpi-labio
 
-Raspberry Pi breakout for general embedded systems labs.
+Together with the JTAG debugger and cover with motor mounts, this Raspberry Pi breakout board forms a complete kit for embedded systems labs in ARM baremetal and linux. This kit has been used for several semesters at [CMU ECE](https://www.ece.cmu.edu/~ece349/).
 
-<img width="800px" src="https://raw.githubusercontent.com/ihartwig/rpi-labio/master/pcb/labio-3d.png" alt="labio 3d"></img>
+<img width="800px" src="https://raw.githubusercontent.com/ihartwig/rpi-labio/master/rpi-labio-hardware-sm.png" alt="labio hardware list"></img>
+
+<img width="800px" src="https://raw.githubusercontent.com/ihartwig/rpi-labio/master/rpi-labio-cover.JPG" alt="labio with protective cover"></img>
 
 This single, compact board extends a Raspberry Pi 0 or 2 for a full range of labs combining embedded processing with real-world sensors and transducers. All parts are optional and can be disconnected in favor of other plugged in hardware. Together, the sensor kit exercises almost all serial and digital I/O available on the Raspberry Pi. For more details check out the [schematic](https://github.com/ihartwig/rpi-labio/blob/master/pcb/labio.pdf) and [board](https://github.com/ihartwig/rpi-labio/blob/master/pcb/svg/labio-brd.svg).
 
